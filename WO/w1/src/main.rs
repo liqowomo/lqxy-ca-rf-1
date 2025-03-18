@@ -6,6 +6,7 @@ fn main() {
     test();
 }
 
+// This function is used to test the yansi crate
 fn test() {
     println!(
         "Testing, {}, {}, {}, {}!",
