@@ -1,6 +1,7 @@
 1. [lqxy-ca-rf-1](#lqxy-ca-rf-1)
 2. [Cargo Bacon](#cargo-bacon)
 3. [Links](#links)
+4. [Diraz](#diraz)
 
 # lqxy-ca-rf-1
 
@@ -29,3 +30,9 @@ What | Link
 :--: | :--:
 [`Rust Cheat Sheet`](https://cheats.rs/) | Best cheatsheet for learnign Rust in general.
 
+# Diraz
+
+Dirz | What?
+:--: | :--:
+[`lr`](./lr/) | Learning Resources 
+[`WO`](./wo/) | Working Folder
