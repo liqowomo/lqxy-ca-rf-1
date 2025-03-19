@@ -3,6 +3,7 @@
 #![allow(unused_imports)] // Allowin unused imports
 
 use cfonts::{BgColors, Colors, Fonts, Options, Rgb, say};
+use sha256::{Digest, Sha256};
 use yansi::Paint;
 
 // Simple colored text with yansi
