@@ -1,5 +1,6 @@
 // use yansi and to write some colored text
-#[allow(dead_code)]
+#![allow(dead_code)] // Required to remove dead code warning
+
 use cfonts::{Colors, Fonts, Options, Rgb, say};
 use yansi::Paint;
 
