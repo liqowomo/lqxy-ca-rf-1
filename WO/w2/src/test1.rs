@@ -17,12 +17,12 @@ pub fn col_text1() {
 
 // Simple banner
 pub fn ban1() {
-    let string = "Nig";
+    let string = "BootyDance";
 
     say(Options {
         text: String::from(string),
         font: Fonts::FontChrome,
-        colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(200, 216, 9))],
+        gradient: vec![String::from("#ff8800"), String::from("#88ff00")],
         ..Options::default()
     });
 }
