@@ -17,7 +17,8 @@ pub fn col_text1() {
 
 // Simple banner - Note using cfonts
 pub fn ban1() {
-    let string = "BootyDance";
+    let string = r#"
+BootyDance"#;
 
     // Function strucutre is as per the official documentation
     say(Options {
