@@ -17,8 +17,11 @@ pub fn col_text1() {
 
 // Simple banner - Note using cfonts
 pub fn ban1() {
-    let string = "BootyDance";
-    let lines = vec!["BootyDance", "PantySmells", "Another Line"];
+    let string = r#"
+BootyDance
+Line 2
+Line 3
+"#;
 
     // Function strucutre is as per the official documentation
     say(Options {
