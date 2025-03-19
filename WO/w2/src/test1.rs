@@ -1,8 +1,6 @@
 // use yansi and to write some colored text
 
-use std::string;
-
-use cfonts::{Options, say};
+use cfonts::{Colors, Fonts, Options, Rgb, say};
 use yansi::Paint;
 
 // Simple colored text with yansi
@@ -26,7 +24,8 @@ pub fn ban1() {
 
     say(Options {
         text: String::from(string),
-        font: String::from("block"),
+        font: Fonts::FontSlick,
+        colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(20, 216, 79))],
         ..Options::default()
     });
 }
