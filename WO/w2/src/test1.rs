@@ -19,6 +19,7 @@ pub fn col_text1() {
 pub fn ban1() {
     let string = "BootyDance";
 
+    // Function strucutre is as per the official documentation
     say(Options {
         text: String::from(string),
         font: Fonts::FontChrome,
