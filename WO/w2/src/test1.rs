@@ -1,7 +1,7 @@
 // use yansi and to write some colored text
 #![allow(dead_code)] // Required to remove dead code warning
 
-use cfonts::{Colors, Fonts, Options, Rgb, say};
+use cfonts::{BgColors, Colors, Fonts, Options, Rgb, say};
 use yansi::Paint;
 
 // Simple colored text with yansi
@@ -22,6 +22,8 @@ pub fn ban1() {
         text: String::from(string),
         font: Fonts::FontChrome,
         colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(200, 216, 9))],
+        background: BgColors::Blue,
+
         ..Options::default()
     });
 }
