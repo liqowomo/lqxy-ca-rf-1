@@ -2,7 +2,7 @@
 
 use yansi::Paint;
 
-pub fn coltext1() {
+pub fn col_text1() {
     println!("{} {} {}",
         Paint::red("Hello"),
         Paint::green("PantySmeller"),
