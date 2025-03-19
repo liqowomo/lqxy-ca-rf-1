@@ -29,6 +29,8 @@ bacon run -- -q --<dir> <*.rs>
 What | Link 
 :--: | :--:
 [`Rust Cheat Sheet`](https://cheats.rs/) | Best cheatsheet for learnign Rust in general.
+[`lib.rs`]()
+
 
 # Diraz
 
