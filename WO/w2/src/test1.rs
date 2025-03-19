@@ -16,14 +16,13 @@ pub fn col_text1() {
 
 // Simple banner
 pub fn ban1() {
-    let string = "Niggaz";
+    let string = "Nig";
 
     say(Options {
         text: String::from(string),
         font: Fonts::FontChrome,
+        background: BgColors::Magenta,
         colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(200, 216, 9))],
-        background: BgColors::Blue,
-
         ..Options::default()
     });
 }
