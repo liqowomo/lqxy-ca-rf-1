@@ -3,7 +3,6 @@
 #![allow(unused_imports)] // Allowin unused imports
 
 use cfonts::{BgColors, Colors, Fonts, Options, Rgb, say};
-use sha256::{Digest, Sha256};
 use yansi::Paint;
 
 // Simple colored text with yansi
@@ -26,13 +25,4 @@ pub fn ban1() {
         gradient: vec![String::from("#ff8800"), String::from("#88ff00")],
         ..Options::default()
     });
-}
-
-// Function for dinding the SHA256 of a number
-pub fn sha256(num: u32) -> String {
-    use sha2::{Digest, Sha256};
-    let mut hasher = Sha256::new();
-    hasher.update(num.to_string());
-    let result = hasher.finalize();
-    format!("{:x}", result)
 }
