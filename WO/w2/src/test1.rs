@@ -5,7 +5,7 @@ use yansi::Paint;
 pub fn coltext1() {
     println!("{} {} {}",
         Paint::red("Hello"),
-        Paint::green("world"),
+        Paint::green("PantySmeller"),
         Paint::blue("!")
     );
 }
