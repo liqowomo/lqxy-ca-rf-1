@@ -1,7 +1,9 @@
 // Main Entry Point
 
 mod le1;
+use le1::{l1print, l1print2};
 
 fn main() {
-    println!("Hello, world!");
+    l1print();
+    l1print2();
 }
