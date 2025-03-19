@@ -15,16 +15,11 @@ pub fn col_text1() {
 
 // Simple banner
 pub fn ban1() {
-    say(Options {
-        text: String::from("hello"),
-        ..Options::default()
-    });
-
-    let string = "PantySmeller";
+    let string = "Niggaz";
 
     say(Options {
         text: String::from(string),
-        font: Fonts::FontSlick,
+        font: Fonts::FontChrome,
         colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(20, 216, 79))],
         ..Options::default()
     });
