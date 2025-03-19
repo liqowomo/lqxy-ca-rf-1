@@ -1,9 +1,9 @@
 // Main Entry Point
 
 mod test;
-use test::{l1print, l1print2};
+use test::{tpr1, tpr2};
 
 fn main() {
-    l1print();
-    l1print2();
+    tpr1();
+    tpr2();
 }
