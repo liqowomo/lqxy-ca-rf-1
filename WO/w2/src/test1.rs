@@ -21,7 +21,7 @@ pub fn ban1() {
     say(Options {
         text: String::from(string),
         font: Fonts::FontChrome,
-        colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(20, 216, 79))],
+        colors: vec![Colors::Red, Colors::Rgb(Rgb::Val(200, 216, 9))],
         ..Options::default()
     });
 }

@@ -2,6 +2,7 @@
 name = "w2"
 version = "0.1.0"
 edition = "2024"
+authors = ["PantySmeller"]
 
 [dependencies]
 cfonts = "1.2.0"
