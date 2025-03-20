@@ -14,9 +14,10 @@ fn bannr() {
 }
 
 fn demo_variable_assignment() {
+    // Vaible Assigment
     let message = "Panty Smellers";
-    let fetish_numer = 69;
-    let booty_weight = fetish_numer / 2;
+    let fetish_number = 69;
+    let booty_weight = fetish_number / 2;
 
     println!(
         "{} {} {}",
