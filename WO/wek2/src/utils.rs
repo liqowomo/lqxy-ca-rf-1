@@ -11,7 +11,7 @@ pub fn print_with_fire_gradient(text: String) {
 
     say(Options {
         text,
-        font: Fonts::FontPallet,
+        font: Fonts::FontTiny,
         gradient: fire_gradient,
         independent_gradient: false,
         transition_gradient: true,
