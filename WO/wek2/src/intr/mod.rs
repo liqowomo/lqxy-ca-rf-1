@@ -1,23 +1,13 @@
 // Introduction to Rust Chapter
 
-use crate::utils::print_with_fire_gradient;
+use crate::utils::{header, print_with_synthwave_gradient};
 use yansi::Paint;
 
 pub fn intr_main() {
-    bannr();
+    print_with_synthwave_gradient("Introduction to Rust".to_string());
     demo_variable_assignment();
     ctrl_flow_1();
     mutability_1()
-}
-
-fn bannr() {
-    let string = "Introduction to Rust".to_string();
-    print_with_fire_gradient(string);
-}
-
-fn header(text: &str) {
-    let line = "~".repeat(20);
-    println!("{} \n {} \n{}", line.blue(), text.blue(), line.blue());
 }
 
 fn demo_variable_assignment() {
@@ -57,11 +47,10 @@ fn ctrl_flow_1() {
     }
 }
 
-// mutability 
-
+// mutability
 fn mutability_1() {
     header("Mutability Test");
-    let mut height = 10;
+    let mut height = 100;
     height = height * 20;
 
     let result = if height > 200 {
@@ -72,5 +61,5 @@ fn mutability_1() {
         println!("{}", "Fuck".magenta())
     };
 
-    println!("Result : {}", result)
+    println!("Result : {:?}", result) // This works since the color cant be printed
 }

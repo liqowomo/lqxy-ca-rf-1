@@ -1,8 +1,10 @@
 // main utiities file
+#![allow(dead_code)]
 
 use cfonts::{Fonts, Options, say};
+use yansi::Paint;
 
-pub fn print_with_fire_gradient(text: String) {
+pub fn print_with_synthwave_gradient(text: String) {
     // Define the fire gradient colors
     let synth = vec![
         String::from("#FF00FF"), // Neon Pink
@@ -20,4 +22,9 @@ pub fn print_with_fire_gradient(text: String) {
         transition_gradient: true,
         ..Options::default()
     });
+}
+
+pub fn header(text: &str) {
+    let line = "~".repeat(20);
+    println!("{} \n {} \n{}", line.blue(), text.blue(), line.blue());
 }
