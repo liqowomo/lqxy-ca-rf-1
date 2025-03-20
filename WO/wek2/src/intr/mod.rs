@@ -66,6 +66,8 @@ fn mutability_1() {
 
     let result = if height > 200 {
         println!("{}", "Height is > 200".green())
+    } else if height > 300 {
+        println!("{}", "Height is > 300").red()
     };
 
 }
