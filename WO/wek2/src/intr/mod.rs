@@ -21,10 +21,10 @@ fn demo_variable_assignment() {
     let line = "=".repeat(20);
 
     println!(
-        "{} \n {} {} {} {}",
+        "{} Demo Variables \n {} {} {}",
         line.blue(),
         message.bold(),
-        fetish_number.on_magenta(),
-        booty_weight.on_yellow(),
+        fetish_number.magenta(),
+        booty_weight.yellow(),
     );
 }
