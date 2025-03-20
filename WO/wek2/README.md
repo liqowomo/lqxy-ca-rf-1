@@ -10,3 +10,8 @@
 # Modules
 
 1. Note you have to declare them in main.rs , and then it can be used in other parts of the program, but you have to explicitly declare address
+
+# Abbreviations used 
+
+Ab | What 
+:--: | :--:
