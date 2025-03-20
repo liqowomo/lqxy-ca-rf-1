@@ -1,9 +1,9 @@
 // Main Entry Point
 
 mod test;
-use test::{tpr1, tpr2};
+mod utils; // required to have it called in other parts of project 
+use test::test_main_runner;
 
 fn main() {
-    tpr1();
-    tpr2();
+    test_main_runner();
 }
