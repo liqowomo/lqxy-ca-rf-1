@@ -18,11 +18,10 @@ fn demo_variable_assignment() {
     let fetish_numer = 69;
     let booty_weight = fetish_numer / 2;
 
-    println!("{} {} {}", message, fetish_numer, booty_weight);
     println!(
         "{} {} {}",
-        Paint::red(message),
-        Paint::green(fetish_numer),
-        Paint::blue(booty_weight)
+        message.bold(),
+        fetish_number.on_magenta(),
+        booty_weight.on_yellow()
     );
 }
