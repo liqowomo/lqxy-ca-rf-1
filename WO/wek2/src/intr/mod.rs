@@ -16,7 +16,7 @@ fn bannr() {
 
 fn header(text: &str) {
     let line = "~".repeat(20);
-    println!("{} {}", line.blue(), text.blue());
+    println!("{} \n {} \n{}", line.blue(), text.blue(), line.blue());
 }
 
 fn demo_variable_assignment() {
@@ -37,6 +37,7 @@ fn demo_variable_assignment() {
 
 // learning about control flow here
 fn ctrl_flow_1() {
+    header("Control Flow");
     let proceed = true;
     if proceed {
         println!("{}", "Sniffing".green());
