@@ -28,3 +28,13 @@ fn demo_variable_assignment() {
         booty_weight.yellow(),
     );
 }
+
+// learning about control flow here
+fn ctrl_flow_1() {
+    let proceed = true;
+    if proceed {
+        println!("Sniffing".green());
+    } else {
+        println!("Not Proceeding");
+    }
+}
