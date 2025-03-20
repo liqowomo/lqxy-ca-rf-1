@@ -6,12 +6,12 @@ use yansi::Paint;
 pub fn intr_main() {
     bannr();
     demo_variable_assignment();
+    ctrl_flow_1();
 }
 
 fn bannr() {
     let string = "Introduction to Rust".to_string();
     print_with_fire_gradient(string);
-    ctrl_flow_1();
 }
 
 fn demo_variable_assignment() {
