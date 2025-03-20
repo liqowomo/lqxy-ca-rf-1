@@ -9,8 +9,8 @@ pub fn intr_main() {
     ctrl_flow_1();
 }
 
-fn bannr(text: &str) {
-    let string = text.to_string();
+fn bannr() {
+    let string = "Introduction to Rust".to_string();
     print_with_fire_gradient(string);
 }
 
