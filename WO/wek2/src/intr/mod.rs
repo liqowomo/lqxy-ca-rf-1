@@ -14,16 +14,21 @@ fn bannr() {
     print_with_fire_gradient(string);
 }
 
+fn header(text: &str) {
+    let line = "~".repeat(20);
+    println!("{} {}", line.blue(), text.blue());
+}
+
 fn demo_variable_assignment() {
     // Vaible Assigment
     let message = "Panty Smellers";
     let fetish_number = 69.2;
     let booty_weight = fetish_number / 2.2;
-    let line = "~".repeat(20);
+
+    header("Variable Assignment");
 
     println!(
-        "Demo Variables \n{} \n {} {} {}",
-        line.blue(),
+        "{} {} {}",
         message.bold(),
         fetish_number.magenta(),
         booty_weight.yellow(),
