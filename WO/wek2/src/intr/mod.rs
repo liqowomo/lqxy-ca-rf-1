@@ -16,5 +16,13 @@ fn bannr() {
 fn demo_variable_assignment() {
     let message = "Panty Smellers";
     let fetish_numer = 69;
-    let booty_weight = 190;
+    let booty_weight = fetish_numer / 2;
+
+    println!("{} {} {}", message, fetish_numer, booty_weight);
+    println!(
+        "{} {} {}",
+        Paint::red(message),
+        Paint::green(fetish_numer),
+        Paint::blue(booty_weight)
+    );
 }
