@@ -18,10 +18,10 @@ fn demo_variable_assignment() {
     let message = "Panty Smellers";
     let fetish_number = 69;
     let booty_weight = fetish_number / 2;
-    let line = "=".repeat(20);
+    let line = "~".repeat(20);
 
     println!(
-        "{} Demo Variables \n {} {} {}",
+        "Demo Variables \n{} \n {} {} {}",
         line.blue(),
         message.bold(),
         fetish_number.magenta(),
