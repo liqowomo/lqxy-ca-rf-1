@@ -45,6 +45,7 @@ fn ctrl_flow_1() {
         println!("Not Proceeding");
     }
 
+    // If Else blocks
     let height = 60;
     if height < 69 {
         println!("{}", "Short 69".green());
