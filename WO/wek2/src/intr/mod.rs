@@ -7,6 +7,7 @@ pub fn intr_main() {
     bannr();
     demo_variable_assignment();
     ctrl_flow_1();
+    mutability_1()
 }
 
 fn bannr() {
@@ -63,7 +64,7 @@ fn mutability_1() {
     height = height * 20;
 
     let result = if height > 200 {
-        print!ln("{}")
-    }
+        println!("{}", "Height is > 200".green())
+    };
 
 }
