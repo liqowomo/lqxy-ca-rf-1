@@ -68,6 +68,9 @@ fn mutability_1() {
         println!("{}", "Height is > 200".green())
     } else if height > 300 {
         println!("{}", "Height is > 300".red())
+    } else {
+        println!("{}", "Fuck".magenta())
     };
 
+    println!("Result : {}", result)
 }
