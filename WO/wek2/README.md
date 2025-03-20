@@ -1,6 +1,7 @@
 
 1. [wk2](#wk2)
 2. [Modules](#modules)
+3. [Abbreviations used](#abbreviations-used)
 
 
 # wk2 
@@ -15,3 +16,6 @@
 
 Ab | What 
 :--: | :--:
+I | Introduction to Rust chatper
+LC | loops and control flow 
+FB | Function Basics
