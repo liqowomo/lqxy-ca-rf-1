@@ -1,9 +1,8 @@
 // Main Entry Point
 
-mod INTR;
-mod test;
+mod intr; // Introduction to rust module
 mod utils; // required to have it called in other parts of project 
-use INTR::intr_main;
+use intr::intr_main;
 
 fn main() {
     intr_main();
