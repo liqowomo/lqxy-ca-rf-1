@@ -44,4 +44,13 @@ fn ctrl_flow_1() {
     } else {
         println!("Not Proceeding");
     }
+
+    let height = 69;
+    if height < 69 {
+        println!("{}", "Short".red());
+    } else if height == 69 {
+        println!("{}", "Short".red());
+    } else {
+        println!("{}", "Short".red());
+    }
 }
