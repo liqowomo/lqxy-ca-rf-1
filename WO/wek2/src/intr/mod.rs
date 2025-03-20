@@ -59,6 +59,11 @@ fn ctrl_flow_1() {
 // mutability 
 
 fn mutability_1() {
-    let mut height = 10 ;
-    height = height * 20 
+    let mut height = 10;
+    height = height * 20;
+
+    let result = if height > 200 {
+        print!ln("{}")
+    }
+
 }
