@@ -11,6 +11,7 @@ pub fn intr_main() {
 fn bannr() {
     let string = "Introduction to Rust".to_string();
     print_with_fire_gradient(string);
+    ctrl_flow_1();
 }
 
 fn demo_variable_assignment() {
@@ -33,7 +34,7 @@ fn demo_variable_assignment() {
 fn ctrl_flow_1() {
     let proceed = true;
     if proceed {
-        println!("Sniffing".green());
+        println!("{}", "Sniffing".green());
     } else {
         println!("Not Proceeding");
     }
