@@ -55,3 +55,10 @@ fn ctrl_flow_1() {
         println!("{}", "More 69".red());
     }
 }
+
+// mutability 
+
+fn mutability_1() {
+    let mut height = 10 ;
+    height = height * 20 
+}
