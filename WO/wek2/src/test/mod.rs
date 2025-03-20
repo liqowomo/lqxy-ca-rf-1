@@ -18,7 +18,10 @@ pub fn mainban() {
 }
 
 pub fn tpr1() {
-    println!("{}", Paint::blue("Hello, from src/test/mod.rs - tpr1"));
+    println!(
+        "{}",
+        Paint::blue("Hello, from src/test/mod.rs - tpr1- Smell Panty")
+    );
 }
 
 pub fn tpr2() {
