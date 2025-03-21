@@ -89,13 +89,18 @@ fn while_loop_advanced_1() {
 }
 
 fn while_loop_advanced_2() {
-    let mut input = String::new();
-    while input.trim() != "Stop" {
-        input.clear(); // Critical: Reset the string before reading new input
-        println!("Enter 'Stop' to stop the loop:");
-        io::stdin()
-            .read_line(&mut input)
-            .expect("Failed to read line");
-        println!("You entered: {}", input.trim().blue());
+    fn while_loop_advanced_1() {
+        let mut input = String::new();
+        while input.trim() != "Stop" {
+            // Explicitly call String's clear() to avoid yansi conflict
+            String::clear(&mut input); // <-- Fix here
+
+            println!("Enter 'Stop' to stop the loop:");
+            io::stdin()
+                .read_line(&mut input)
+                .expect("Failed to read line");
+
+            println!("You entered: {}", input.trim().blue());
+        }
     }
 }
