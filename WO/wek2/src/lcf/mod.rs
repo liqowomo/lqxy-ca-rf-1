@@ -85,5 +85,7 @@ fn while_loop_advanced_1() {
 
     while input.trim() != "fuck" {
         input.clear();
+        print!("Enter Work (type fuck to exit):");
+        io::stdin().read_line(&mut input).expect("😡 Failed");
     }
 }
