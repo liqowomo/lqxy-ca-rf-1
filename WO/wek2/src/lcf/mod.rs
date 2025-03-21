@@ -84,11 +84,11 @@ fn while_loop_advanced_1() {
     let mut input = String::new();
 
     while input.trim() != "fuck" {
-        println!("Enter Work (type fuck to exit):");
+        println!("Enter Work (type nono to exit):");
         input.clear();
         io::stdin().read_line(&mut input).expect("😡 Failed");
         println!("You Entered : {}", input.magenta());
     }
 
-    println!("👃Smelly Woman Pussy")
+    println!("👃WebntOut")
 }
