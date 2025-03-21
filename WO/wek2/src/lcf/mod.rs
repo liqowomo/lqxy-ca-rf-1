@@ -142,8 +142,12 @@ fn for_mb_1() {
 
     for i in 1..=10 {
         if i % 2 == 0 {
-            println!("{}", "Skipping Even Number".green())
+            println!("{}{}", "i Looped = ".blue(), i.magenta());
             continue;
+        }
+        println!("{}", "Skipping Even Number".green());
+        if i == 7 {
+            break;
         }
     }
 }
