@@ -29,3 +29,8 @@ pub fn header(text: &str) {
     let line = "~".repeat(20);
     println!("{} \n {} \n{}", line.blue(), text.blue(), line.blue());
 }
+
+// Function to clear console
+pub fn clear_console() {
+    print!("\x1B[2J\x1B[1;1H");
+}

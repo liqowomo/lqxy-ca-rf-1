@@ -2,7 +2,7 @@
 #![allow(dead_code)]
 #![allow(unused_imports)]
 
-use crate::utils::{header, print_with_synthwave_gradient};
+use crate::utils::{clear_console, header, print_with_synthwave_gradient};
 use std::io;
 use yansi::Paint;
 
