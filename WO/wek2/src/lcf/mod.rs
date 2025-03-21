@@ -25,3 +25,20 @@ fn loops_1() {
         }
     }
 }
+
+// Enahnced Loops function that will accept input and then loop
+fn loops_2() {
+    header("Enhanced Loop Test");
+    let mut x = 1;
+    let mut input = String::new();
+    println!("Enter a number to loop to: ");
+    std::io::stdin().read_line(&mut input).unwrap();
+    let input: i32 = input.trim().parse().unwrap();
+    loop {
+        println!("{}, {}", "x Looped to".blue(), x.magenta());
+        x += 1;
+        if x > input {
+            break;
+        }
+    }
+}
