@@ -78,4 +78,11 @@ fn while_loops_1() {
 }
 
 // Advanced While Loops function with input
-fn while_loop_advanced_1() {}
+fn while_loop_advanced_1() {
+    let mut input = String::new();
+    while input.trim() != "Stop" {
+        input.clear();
+        println!("Enter 'Stop' to stop the loop: ");
+        io::stdin().read_line(&mut input).expect("Failed")
+    }
+}
