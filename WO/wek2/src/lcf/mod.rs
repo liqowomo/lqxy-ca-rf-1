@@ -9,7 +9,7 @@ use yansi::Paint;
 // Main function that will call other functions in the file
 pub fn lcf_main() {
     print_with_synthwave_gradient("LCF".to_string());
-    while_loop_advanced_2();
+    for_loop_1();
 }
 
 // Loops function
@@ -110,4 +110,8 @@ fn while_loop_advanced_2() {
 
 fn for_loop_1() {
     header("For Loop Test");
+
+    for i in 1..6 {
+        println!("{}{}", "i Looped = ".blue(), i.magenta());
+    }
 }
