@@ -9,7 +9,7 @@ use yansi::Paint;
 // Main function that will call other functions in the file
 pub fn lcf_main() {
     print_with_synthwave_gradient("Loops + Control Flow".to_string());
-    loops_1();
+    if_let_1();
 }
 
 // Loops function
@@ -56,7 +56,12 @@ fn loops_2() {
 
 // Exploring if let
 fn if_let_1() {
+    header("If Let Test");
     // let mut maybe_number = some(69)
     let may_num = Some(69);
-    if let Some(num) = may_num
+    if let Some(num) = may_num {
+        println!("Number: {}", num.magenta());
+    } else {
+        println!("No number");
+    }
 }
