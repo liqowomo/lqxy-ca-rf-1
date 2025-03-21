@@ -124,4 +124,10 @@ fn for_loop_1() {
     for i in (1..6).rev() {
         println!("{}{}", "i Looped = ".blue(), i.magenta());
     }
+
+    println!("{}\n{}", "For 3 - Looping throw array ", line.blue());
+    let numbers = vec![10, 20, 30, 40, 50];
+    for n in numbers {
+        println!("{}{}", "n Looped = ".blue(), n.magenta());
+    }
 }
