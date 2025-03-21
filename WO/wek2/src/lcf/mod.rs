@@ -3,7 +3,7 @@
 #![allow(unused_imports)]
 
 use crate::utils::{header, print_with_synthwave_gradient};
-use std::{self, write};
+use std::io::{self, Write};
 use yansi::Paint;
 
 // Main function that will call other functions in the file
@@ -86,7 +86,7 @@ fn while_loop_advanced_1() {
     while input.trim() != "nono" {
         print!("Enter Work (type 'nono' to exit): ");
         io::stdout().flush().expect("Failed to flush stdout");
-        input.clear();
+        input.clear(); // Clear the buffer before reading new input
         if io::stdin().read_line(&mut input).is_err() {
             eprintln!("Error reading line.");
             break;
