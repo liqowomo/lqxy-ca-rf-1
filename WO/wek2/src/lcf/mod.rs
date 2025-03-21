@@ -78,17 +78,4 @@ fn while_loops_1() {
 }
 
 // Advanced While Loops function with input
-fn while_loop_advanced_1() {
-    println!("Advanced While Loop Test");
-
-    let mut input = String::new();
-
-    while input.trim() != "nono" {
-        println!("Enter Work (type 'nono' to exit):");
-        input.clear(); // Clear the input buffer
-        io::stdin().read_line(&mut input).expect("😡 Failed");
-        println!("You Entered: {}", input.trim().magenta());
-    }
-
-    println!("👃WebntOut");
-}
+fn while_loop_advanced_1() {}
