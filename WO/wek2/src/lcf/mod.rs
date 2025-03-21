@@ -83,6 +83,7 @@ fn while_loop_advanced_1() {
     while input.trim() != "Stop" {
         input.clear();
         println!("Enter 'Stop' to stop the loop: ");
-        io::stdin().read_line(&mut input).expect("Failed")
+        io::stdin().read_line(&mut input).expect("Failed");
+        println!("You entered: {}", input.trim().blue());
     }
 }
