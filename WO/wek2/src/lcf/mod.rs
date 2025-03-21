@@ -3,6 +3,7 @@
 #![allow(unused_imports)]
 
 use crate::utils::{header, print_with_synthwave_gradient};
+use std::io;
 use yansi::Paint;
 
 // Main function that will call other functions in the file
@@ -17,7 +18,7 @@ fn loops_1() {
     header("Loop Test");
     // let mut x = 1;
     println!("Enter Number Of Pussy to Smell: ");
-    let num: i32 = io::stdin()
+    let x: i32 = io::stdin()
         .read_line(&mut String::new())
         .expect("Failed to read line")
         .trim()
