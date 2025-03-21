@@ -88,19 +88,18 @@ fn while_loop_advanced_1() {
     }
 }
 
+// WOrks , the issue was the input.clear was not being cleared
 fn while_loop_advanced_2() {
-    fn while_loop_advanced_1() {
-        let mut input = String::new();
-        while input.trim() != "Stop" {
-            // Explicitly call String's clear() to avoid yansi conflict
-            String::clear(&mut input); // <-- Fix here
+    let mut input = String::new();
+    while input.trim() != "Stop" {
+        // Explicitly call String's clear() to avoid yansi conflict
+        String::clear(&mut input); // <-- Fix here
 
-            println!("Enter 'Stop' to stop the loop:");
-            io::stdin()
-                .read_line(&mut input)
-                .expect("Failed to read line");
+        println!("Enter 'Stop' to stop the loop:");
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Failed to read line");
 
-            println!("You entered: {}", input.trim().blue());
-        }
+        println!("You entered: {}", input.trim().blue());
     }
 }
