@@ -91,8 +91,8 @@ fn while_loop_advanced_1() {
 fn while_loop_advanced_2() {
     let mut input = String::new();
     while input.trim() != "Stop" {
-        input.clear(); // Clear the input string before reading a new line
-        println!("Enter 'Stop' to stop the loop: ");
+        input.clear(); // Critical: Reset the string before reading new input
+        println!("Enter 'Stop' to stop the loop:");
         io::stdin()
             .read_line(&mut input)
             .expect("Failed to read line");
