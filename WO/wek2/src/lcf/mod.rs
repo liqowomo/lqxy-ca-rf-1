@@ -9,7 +9,7 @@ use yansi::Paint;
 // Main function that will call other functions in the file
 pub fn lcf_main() {
     print_with_synthwave_gradient("Loops + Control Flow".to_string());
-    loops_2();
+    loops_1();
 }
 
 // Loops function
