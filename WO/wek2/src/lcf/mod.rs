@@ -58,5 +58,5 @@ fn loops_2() {
 fn if_let_1() {
     // let mut maybe_number = some(69)
     let may_num = Some(69);
-    if let Some(num) = may_
+    if let Some(num) = may_num
 }
