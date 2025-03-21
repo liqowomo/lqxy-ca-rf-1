@@ -112,9 +112,15 @@ fn while_loop_advanced_2() {
 
 fn for_loop_1() {
     header("For Loop Test");
-    let 
-    
+    let line = "~".repeat(20);
+
+    println!("{}\n {}", "For 1", line.blue());
     for i in 1..6 {
+        println!("{}{}", "i Looped = ".blue(), i.magenta());
+    }
+
+    println!("{}\n{}", "For 2", line.blue());
+    for i in (1..6).rev() {
         println!("{}{}", "i Looped = ".blue(), i.magenta());
     }
 }
