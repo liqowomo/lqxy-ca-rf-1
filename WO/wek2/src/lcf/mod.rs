@@ -8,8 +8,8 @@ use yansi::Paint;
 
 // Main function that will call other functions in the file
 pub fn lcf_main() {
-    print_with_synthwave_gradient("Loops + Control Flow".to_string());
-    if_let_1();
+    print_with_synthwave_gradient("LCF".to_string());
+    while_loops_1();
 }
 
 // Loops function
@@ -63,5 +63,16 @@ fn if_let_1() {
         println!("Number: {}", num.magenta());
     } else {
         println!("No number");
+    }
+}
+
+// While Loops function
+
+fn while_loops_1() {
+    header("While Loop Test");
+    let mut x = 1;
+    while x <= 5 {
+        println!("{}, {}", "x Looped to".blue(), x.magenta());
+        x += 1;
     }
 }
