@@ -32,7 +32,7 @@ fn loops_2() {
     header("Enhanced Loop Test");
 
     let mut input = String::new();
-    println!("Enter a number to loop to: ");
+    println!("➡️ Fucker Put Number: ");
     io::stdin().read_line(&mut input).unwrap();
 
     // Handle invalid or empty input
