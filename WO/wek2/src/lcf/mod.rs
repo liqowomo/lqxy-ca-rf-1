@@ -9,7 +9,7 @@ use yansi::Paint;
 // Main function that will call other functions in the file
 pub fn lcf_main() {
     print_with_synthwave_gradient("LCF".to_string());
-    while_loops_1();
+    while_loop_advanced_1();
 }
 
 // Loops function
@@ -75,4 +75,9 @@ fn while_loops_1() {
         println!("{}{}", "x Looped = ".blue(), x.magenta());
         x += 1;
     }
+}
+
+// Advanced While Loops function with input
+fn while_loop_advanced_1() {
+    header("Advanced While Loop Test")
 }
