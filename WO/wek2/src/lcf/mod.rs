@@ -53,3 +53,8 @@ fn loops_2() {
         }
     }
 }
+
+// Exploring if let
+fn if_let_1() {
+    // let mut maybe_number = some(69)
+}
