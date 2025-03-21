@@ -30,6 +30,7 @@ fn loops_1() {
 // Enahnced Loops function that will accept input and then loop
 fn loops_2() {
     header("Enhanced Loop Test");
+
     let mut x = 1;
     let mut input = String::new();
     println!("Enter a number to loop to: ");
