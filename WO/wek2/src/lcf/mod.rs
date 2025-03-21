@@ -34,7 +34,6 @@ fn loops_2() {
     let mut input = String::new();
     println!("Enter a number to loop to: ");
     io::stdin().read_line(&mut input).unwrap();
-    let input: i32 = input.trim().parse().unwrap();
 
     // Handle invalid or empty input
     let input: i32 = match input.trim().parse() {
@@ -44,10 +43,12 @@ fn loops_2() {
             return;
         }
     };
+
+    let mut x = 1; // Start the loop counter
     loop {
-        println!("{}, {}", "x Looped to".blue(), input.magenta());
-        input += 1;
-        if input > input {
+        println!("{}, {}", "x Looped to".blue(), x.magenta());
+        x += 1;
+        if x > input {
             break;
         }
     }
