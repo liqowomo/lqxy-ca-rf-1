@@ -1,6 +1,8 @@
 // Loope and control flow
 #![allow(dead_code)]
 #![allow(unused_imports)]
+#![allow(unused_variables)]
+#![allow(deprecated)]
 
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
 use std::io;
@@ -110,7 +112,8 @@ fn while_loop_advanced_2() {
 
 fn for_loop_1() {
     header("For Loop Test");
-
+    let 
+    
     for i in 1..6 {
         println!("{}{}", "i Looped = ".blue(), i.magenta());
     }
