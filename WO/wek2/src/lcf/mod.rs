@@ -12,4 +12,11 @@ pub fn lcf_main() {
 
 // Loops function
 
-fn loops_1() {}
+fn loops_1() {
+    let mut x = 1;
+
+    // continue loop until x > 5
+    loop {
+        println!("{}, {}", "x is".blue(), x);
+    }
+}
