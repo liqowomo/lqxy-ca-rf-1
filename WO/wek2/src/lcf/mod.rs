@@ -119,7 +119,7 @@ fn for_loop_1() {
         println!("{}{}", "i Looped = ".blue(), i.magenta());
     }
 
-    // printing in reverse
+    // printing in reverse - Not the rev keyword
     println!("{}\n{}", "For 2 - In Reverse", line.blue());
     for i in (1..6).rev() {
         println!("{}{}", "i Looped = ".blue(), i.magenta());
