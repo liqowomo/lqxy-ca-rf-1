@@ -3,7 +3,7 @@
 #![allow(unused_imports)]
 
 use crate::utils::{header, print_with_synthwave_gradient};
-use std::io;
+use std::{self, write};
 use yansi::Paint;
 
 // Main function that will call other functions in the file
@@ -83,12 +83,16 @@ fn while_loop_advanced_1() {
 
     let mut input = String::new();
 
-    while input.trim() != "fuck" {
-        println!("Enter Work (type nono to exit):");
+    while input.trim() != "nono" {
+        print!("Enter Work (type 'nono' to exit): ");
+        io::stdout().flush().expect("Failed to flush stdout");
         input.clear();
-        io::stdin().read_line(&mut input).expect("😡 Failed");
-        println!("You Entered : {}", input.magenta());
+        if io::stdin().read_line(&mut input).is_err() {
+            eprintln!("Error reading line.");
+            break;
+        }
+        println!("You Entered: {}", input.trim().magenta());
     }
 
-    println!("👃WebntOut")
+    println!("👃WebntOut");
 }
