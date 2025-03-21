@@ -115,7 +115,7 @@ fn for_loop_1() {
     let line = "~".repeat(20);
 
     println!("{}\n {}", "For 1", line.blue());
-    for i in 1..6 {
+    for i in 1..=6 {
         println!("{}{}", "i Looped = ".blue(), i.magenta());
     }
 
