@@ -6,4 +6,5 @@ author = "BootySniffer <booty.sniff.er>"
 
 [dependencies]
 cfonts = "1.2.0"
+termimad = "0.31.2"
 yansi = "1.0.1"
