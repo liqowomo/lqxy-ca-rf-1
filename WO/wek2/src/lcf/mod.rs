@@ -16,10 +16,11 @@ pub fn lcf_main() {
 fn loops_1() {
     header("Loop Test");
     let mut x = 1;
+    println!("Enter Number Of Pussy to Smell: ");
 
     // continue loop until x > 5
     loop {
-        println!("{}, {}", "x is".blue(), x.magenta());
+        println!("{}, {}", "x Looped to".blue(), x.magenta());
         x += 1;
         if x > 5 {
             break;
