@@ -87,7 +87,7 @@ fn while_loop_advanced_1() {
         println!("Enter Work (type fuck to exit):");
         input.clear();
         io::stdin().read_line(&mut input).expect("😡 Failed");
-        println!("You Entered : {}", input.magenta().blink());
+        println!("You Entered : {}", input.magenta());
     }
 
     println!("👃Smelly Woman Pussy")
