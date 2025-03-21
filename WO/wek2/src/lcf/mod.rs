@@ -72,7 +72,7 @@ fn while_loops_1() {
     header("While Loop Test");
     let mut x = 1;
     while x <= 5 {
-        println!("{}, {}", "x Looped to".blue(), x.magenta());
+        println!("{}, {}", "x Looped = ".blue(), x.magenta());
         x += 1;
     }
 }
