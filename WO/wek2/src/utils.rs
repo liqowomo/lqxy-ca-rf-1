@@ -20,7 +20,7 @@ pub fn print_with_synthwave_gradient(text: String) {
         gradient: synth,
         independent_gradient: false,
         transition_gradient: true,
-        letter_spacing: 2,
+        spaceless: true,
         ..Options::default()
     });
 }
