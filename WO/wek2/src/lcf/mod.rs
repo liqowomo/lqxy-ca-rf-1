@@ -79,5 +79,11 @@ fn while_loops_1() {
 
 // Advanced While Loops function with input
 fn while_loop_advanced_1() {
-    header("Advanced While Loop Test")
+    header("Advanced While Loop Test");
+
+    let mut input = String::new();
+
+    while input.trim() != "fuck" {
+        input.clear();
+    }
 }
