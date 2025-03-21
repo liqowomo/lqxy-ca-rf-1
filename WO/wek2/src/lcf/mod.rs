@@ -15,13 +15,18 @@ pub fn lcf_main() {
 
 fn loops_1() {
     header("Loop Test");
-    let mut x = 1;
+    // let mut x = 1;
     println!("Enter Number Of Pussy to Smell: ");
+    let num: i32 = io::stdin()
+        .read_line(&mut String::new())
+        .expect("Failed to read line")
+        .trim()
+        .parse()
+        .expect("Please type a valid number");
 
     // continue loop until x > 5
     loop {
         println!("{}, {}", "x Looped to".blue(), x.magenta());
-        x += 1;
         if x > 5 {
             break;
         }
