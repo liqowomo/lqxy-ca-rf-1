@@ -85,7 +85,7 @@ fn while_loop_advanced_1() {
 
     while input.trim() != "nono" {
         println!("Enter Work (type 'nono' to exit):");
-        input.clear();
+        input.clear(); // Clear the input buffer
         io::stdin().read_line(&mut input).expect("😡 Failed");
         println!("You Entered: {}", input.trim().magenta());
     }
