@@ -31,15 +31,23 @@ fn loops_1() {
 fn loops_2() {
     header("Enhanced Loop Test");
 
-    let mut x = 1;
     let mut input = String::new();
     println!("Enter a number to loop to: ");
     io::stdin().read_line(&mut input).unwrap();
     let input: i32 = input.trim().parse().unwrap();
+
+    // Handle invalid or empty input
+    let input: i32 = match input.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("{}", "Invalid input. Please enter a valid number.".red());
+            return;
+        }
+    };
     loop {
-        println!("{}, {}", "x Looped to".blue(), x.magenta());
-        x += 1;
-        if x > input {
+        println!("{}, {}", "x Looped to".blue(), input.magenta());
+        input += 1;
+        if input > input {
             break;
         }
     }
