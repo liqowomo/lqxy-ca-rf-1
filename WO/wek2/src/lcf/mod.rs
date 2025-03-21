@@ -9,7 +9,7 @@ use yansi::Paint;
 // Main function that will call other functions in the file
 pub fn lcf_main() {
     print_with_synthwave_gradient("LCF".to_string());
-    while_loop_advanced_1();
+    while_loop_advanced_2();
 }
 
 // Loops function
@@ -84,6 +84,18 @@ fn while_loop_advanced_1() {
         input.clear();
         println!("Enter 'Stop' to stop the loop: ");
         io::stdin().read_line(&mut input).expect("Failed");
+        println!("You entered: {}", input.trim().blue());
+    }
+}
+
+fn while_loop_advanced_2() {
+    let mut input = String::new();
+    while input.trim() != "Stop" {
+        input.clear(); // Clear the input string before reading a new line
+        println!("Enter 'Stop' to stop the loop: ");
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Failed to read line");
         println!("You entered: {}", input.trim().blue());
     }
 }
