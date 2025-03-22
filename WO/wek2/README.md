@@ -19,3 +19,5 @@ Ab | What
 I | Introduction to Rust chatper
 LC | loops and control flow 
 FB | Function Basics
+
+- Note all the excercises for each section is in one `mod.rs` file and then you just call each one in a main function
