@@ -65,3 +65,11 @@ fn split_strings_call() {
     let chunk = split_strings("Smell, Panty".to_string(), ',', 1);
     println!("Chunk: {}", chunk.magenta());
 }
+
+// Using parameters
+fn sum_arg(n: &[i32]) -> i32 {
+    let mut results = 0;
+    for num in n {
+        results += n
+    }
+}
