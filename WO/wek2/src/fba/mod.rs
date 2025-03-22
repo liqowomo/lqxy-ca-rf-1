@@ -12,7 +12,12 @@ use yansi::Paint;
 pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
+    proc_num_call();
 }
+
+// ******************
+// Various number operations
+// ******************
 
 // Variou operations on numbers
 fn proc_num(numbers: &[i32]) {
@@ -26,4 +31,19 @@ fn proc_num(numbers: &[i32]) {
 
     // Print sum of numbers
     println!("Sum of numbers: {}", sum.on_bright_blue());
+
+    // If sum even print message
+    if sum % 2 == 0 {
+        println!("Sum is even");
+    } else {
+        println!("Sum is odd");
+    }
+}
+
+fn proc_num_call() {
+    // Create a vector of numbers
+    let numbers = vec![1, 2, 3, 4, 5];
+
+    // Call proc_num with the vector
+    proc_num(&numbers);
 }
