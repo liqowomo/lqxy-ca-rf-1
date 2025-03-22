@@ -156,3 +156,5 @@ fn for_mb_1() {
 // match control flow patterm NMNo
 // Aaplies to while loops ,
 //==================================================================================================
+
+fn match_break_1() {}
