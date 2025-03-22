@@ -21,6 +21,8 @@ pub fn fba_main() {
 
 // Variou operations on numbers
 fn proc_num(numbers: &[i32]) {
+    header("Various number operations");
+
     // Init sum to 0
     let mut sum = 0;
 
@@ -43,6 +45,7 @@ fn proc_num(numbers: &[i32]) {
 fn proc_num_call() {
     // Create a vector of numbers
     let numbers = vec![1, 2, 3, 4, 5];
+    println!("Numbers: {:?}", numbers);
 
     // Call proc_num with the vector
     proc_num(&numbers);
