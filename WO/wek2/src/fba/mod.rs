@@ -13,3 +13,14 @@ pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
 }
+
+// Variou operations on numbers
+fn proc_num(numbers: &[i32]) {
+    // Init sum to 0
+    let mut sum = 0;
+
+    // Iterate over the numbers, adding each one to sum
+    for num in numbers {
+        sum += num;
+    }
+}
