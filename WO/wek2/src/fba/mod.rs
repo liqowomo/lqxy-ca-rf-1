@@ -53,3 +53,10 @@ fn proc_num_call() {
 }
 
 // Explicit return tyoes
+
+fn split_strings(s: String, delimiter: char, field: usize) -> String {
+    let parts: Vec<&str> = s.split(delimiter).collect();
+    let result = parts.get(field);
+
+    result.to_string()
+}
