@@ -67,4 +67,11 @@ fn split_strings_call() {
 }
 
 // Using parameters
-fn sum_arg(numbers: &[i32]) -> i32 {}
+fn sum_arg(numbers: &[i32]) -> i32 {
+    let mut result = 0;
+    for number in numbers {
+        result += number
+    }
+
+    result
+}
