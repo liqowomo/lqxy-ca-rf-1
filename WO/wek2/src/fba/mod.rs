@@ -45,9 +45,9 @@ fn proc_num(numbers: &[i32]) {
 fn proc_num_call() {
     // Create a vector of numbers
     let numbers = vec![1, 2, 3, 4, 5];
-    let numbers2 = vec![1, 2, 3, 4, 5];
+    let numbers2 = [100, 200, 300, 400, 500];
 
     // Call proc_num with the vector
-    proc_num(&numbers2);
+    proc_num(&[100, 200, 300, 400, 500]);
     println!("Numbers: {:?}", numbers2.green());
 }
