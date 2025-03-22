@@ -1,9 +1,9 @@
 // Main Entry Point
 
-mod lcf;
+mod fba;
 mod utils; // required to have it called in other parts of project
-use lcf::lcf_main;
+use fba::fba_main;
 
 fn main() {
-    lcf_main();
+    fba_main();
 }
