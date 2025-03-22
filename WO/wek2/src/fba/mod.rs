@@ -59,7 +59,7 @@ fn split_strings(s: String, delimiter: char, field: usize) -> String {
     let parts: Vec<&str> = s.split(delimiter).collect();
     let result = parts.get(field);
 
-    result.to_string()
+    result.expect("Fuck").to_string()
 }
 fn split_strings_call() {
     let chunk = split_strings("Smell, Panty".to_string(), ',', 1);
