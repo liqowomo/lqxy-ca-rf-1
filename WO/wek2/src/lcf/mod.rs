@@ -158,6 +158,7 @@ fn for_mb_1() {
 //==================================================================================================
 
 fn match_break_1() {
+    header("Match and Break Test");
     let fetish = "Feet";
 
     // Writing the match case statement
