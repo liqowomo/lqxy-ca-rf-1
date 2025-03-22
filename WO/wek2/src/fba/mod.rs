@@ -51,3 +51,5 @@ fn proc_num_call() {
     proc_num(&[100, 200, 300, 400, 500]);
     println!("Numbers: {:?}", numbers2.green());
 }
+
+// Explicit return tyoes
