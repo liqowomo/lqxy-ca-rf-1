@@ -11,7 +11,7 @@ use yansi::Paint;
 // Main function that will call other functions in the file
 pub fn lcf_main() {
     print_with_synthwave_gradient("LCF".to_string());
-    for_mb_1();
+    match_break_1();
 }
 
 // Loops function
@@ -163,7 +163,7 @@ fn match_break_1() {
     // Writing the match case statement
     match fetish {
         "Feet" => println!("{}", "Foot Fetish".red()),
-        "Boobs" => println!("Boob Fetish"),
-        _ => println!("No Fetish"),
+        "Fart" => println!("{}", "Fart Sniiffing".green()),
+        _ => println!("{}", "No Fetish".blue()),
     }
 }
