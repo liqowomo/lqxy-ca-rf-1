@@ -12,7 +12,7 @@ use yansi::Paint;
 pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
-    split_strings_call();
+    sum_arg_call()
 }
 
 // ******************
@@ -68,7 +68,7 @@ fn split_strings_call() {
 
 // Using parameters
 fn sum_arg(n: &[i32]) -> i32 {
-    let text = "";
+    let text = "Sum funtion with Args";
     header(text);
 
     let mut result = 0;
@@ -81,5 +81,6 @@ fn sum_arg(n: &[i32]) -> i32 {
 fn sum_arg_call() {
     let num = [2, 5, 6, 7, 8];
     let res = sum_arg(&num);
+    println!("Numbz = {:?}", num.red());
     println!("Sum iz {}", res.green())
 }
