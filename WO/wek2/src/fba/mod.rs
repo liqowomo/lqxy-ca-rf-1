@@ -23,4 +23,7 @@ fn proc_num(numbers: &[i32]) {
     for num in numbers {
         sum += num;
     }
+
+    // Print sum of numbers
+    println!("Sum of numbers: {}", sum.on_bright_blue());
 }
