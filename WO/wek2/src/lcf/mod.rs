@@ -159,12 +159,17 @@ fn for_mb_1() {
 
 fn match_break_1() {
     header("Match and Break Test");
-    let fetish = "Feet";
+
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+    println!("Enter Fetish:");
 
     // Writing the match case statement
-    match fetish {
+    match input.trim() {
         "Feet" => println!("{}", "Foot Fetish".red()),
         "Fart" => println!("{}", "Fart Sniiffing".green()),
-        _ => println!("{}", "No Fetish".blue()),
+        _ => println!("{}", "Scat Fetish".blue()),
     }
 }
