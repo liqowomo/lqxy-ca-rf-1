@@ -32,7 +32,7 @@ fn proc_num(numbers: &[i32]) {
     }
 
     // Print sum of numbers
-    println!("Sum of numbers: {}", sum.on_bright_blue());
+    println!("Sum of numbers: {}", sum.bright_blue());
 
     // If sum even print message
     if sum % 2 == 0 {
@@ -45,8 +45,8 @@ fn proc_num(numbers: &[i32]) {
 fn proc_num_call() {
     // Create a vector of numbers
     let numbers = vec![1, 2, 3, 4, 5];
-    println!("Numbers: {:?}", numbers);
 
     // Call proc_num with the vector
     proc_num(&numbers);
+    println!("Numbers: {:?}", numbers.green());
 }
