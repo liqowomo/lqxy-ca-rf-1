@@ -68,6 +68,9 @@ fn split_strings_call() {
 
 // Using parameters
 fn sum_arg(n: &[i32]) -> i32 {
+    let text = "";
+    header(text);
+
     let mut result = 0;
     for number in n {
         result += number
@@ -77,4 +80,6 @@ fn sum_arg(n: &[i32]) -> i32 {
 
 fn sum_arg_call() {
     let num = [2, 5, 6, 7, 8];
+    let res = sum_arg(&num);
+    println!("Sum iz {}", res.green())
 }
