@@ -160,11 +160,11 @@ fn for_mb_1() {
 fn match_break_1() {
     header("Match and Break Test");
 
+    println!("Enter Fetish:");
     let mut input = String::new();
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
-    println!("Enter Fetish:");
 
     // Writing the match case statement
     match input.trim() {
