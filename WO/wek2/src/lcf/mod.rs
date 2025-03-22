@@ -10,6 +10,7 @@ use yansi::Paint;
 
 // Main function that will call other functions in the file
 pub fn lcf_main() {
+    clear_console();
     print_with_synthwave_gradient("LCF".to_string());
     match_break_1();
 }
