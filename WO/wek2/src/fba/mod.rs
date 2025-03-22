@@ -60,3 +60,7 @@ fn split_strings(s: String, delimiter: char, field: usize) -> String {
 
     result.to_string()
 }
+fn split_strings_call() {
+    let chunk = split_strings("Smell, Panty", ',', 1);
+    println!("Chunk: {}", chunk.magenta());
+}
