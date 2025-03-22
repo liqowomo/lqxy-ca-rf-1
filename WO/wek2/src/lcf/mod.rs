@@ -163,9 +163,7 @@ fn match_break_1() {
 
     println!("Enter Fetish:");
     let mut input = String::new();
-    io::stdin()
-        .read_line(&mut input)
-        .expect("Failed to read line");
+    io::stdin().read_line(&mut input).expect("Raped");
     println!("You entered: {}", input.trim().blue());
 
     // Writing the match case statement
