@@ -166,10 +166,11 @@ fn match_break_1() {
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
+    println!("You entered: {}", input.trim().blue());
 
     // Writing the match case statement
     match input.trim() {
-        "Feet" => println!("{}", "Foot Fetish".red()),
+        "Feet" | "sweat" => println!("{}", "Foot Fetish".red()),
         "Fart" => println!("{}", "Fart Sniiffing".green()),
         _ => println!("{}", "Scat Fetish".blue()),
     }
