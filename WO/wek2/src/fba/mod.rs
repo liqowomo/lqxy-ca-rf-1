@@ -12,7 +12,7 @@ use yansi::Paint;
 pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
-    proc_num_call();
+    split_strings_call();
 }
 
 // ******************
@@ -55,6 +55,7 @@ fn proc_num_call() {
 // Explicit return tyoes
 
 fn split_strings(s: String, delimiter: char, field: usize) -> String {
+    header("Split Strings");
     let parts: Vec<&str> = s.split(delimiter).collect();
     let result = parts.get(field);
 
