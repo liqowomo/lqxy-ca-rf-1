@@ -157,4 +157,13 @@ fn for_mb_1() {
 // Aaplies to while loops ,
 //==================================================================================================
 
-fn match_break_1() {}
+fn match_break_1() {
+    let fetish = "Feet";
+
+    // Writing the match case statement
+    match fetish {
+        "Feet" => println!("{}", "Foot Fetish".red()),
+        "Boobs" => println!("Boob Fetish"),
+        _ => println!("No Fetish"),
+    }
+}
