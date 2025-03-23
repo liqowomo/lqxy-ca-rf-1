@@ -15,7 +15,7 @@ use yansi::Paint;
 pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
-    er_ha_ma_1();
+    er_ha_ma_2();
 }
 
 // ******************
@@ -136,4 +136,9 @@ fn er_ha_ma_1() {
     for line in reader.lines() {
         println!("{}", line.unwrap().green())
     }
+}
+
+// Above function refactor
+fn er_ha_ma_2() {
+    let file = File::open("smellpanty.txt");
 }
