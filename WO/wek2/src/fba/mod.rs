@@ -7,7 +7,7 @@
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
 use std::{
     fs::File,
-    io::{self, BufReader},
+    io::{self, BufRead, BufReader},
 };
 use yansi::Paint;
 
@@ -15,7 +15,7 @@ use yansi::Paint;
 pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
-    loop_panic_1_call();
+    er_ha_ma_1();
 }
 
 // ******************
