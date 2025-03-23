@@ -138,10 +138,9 @@ fn er_ha_ma_1() {
     }
 }
 
-//
-//
-//
-//
+// Diff from above fuction , the errors are not depended on the variable type
+// - Above it has to be file type and println! wont work
+// - Function below we are depending on the file type
 
 // Above function refactor
 fn er_ha_ma_2() {
