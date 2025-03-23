@@ -84,3 +84,17 @@ fn sum_arg_call() {
     println!("Numbz = {:?}", num.red());
     println!("Sum iz {}", res.green())
 }
+
+// ******************
+// Understanding Panic KW in Rust
+// ******************
+
+fn loop_panic_1(num: Vec<i32>) {
+    for i in num {
+        if num < 0 {
+            panic("FUCK NEGATIVE NUMBAZ")
+        }
+
+        println!("num: {}", num.green())
+    }
+}
