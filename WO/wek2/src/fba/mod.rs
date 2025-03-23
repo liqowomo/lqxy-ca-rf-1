@@ -91,10 +91,15 @@ fn sum_arg_call() {
 
 fn loop_panic_1(num: Vec<i32>) {
     for i in num {
-        if num < 0 {
-            panic("FUCK NEGATIVE NUMBAZ")
+        if i < 0 {
+            panic!("FUCK NEGATIVE NUMBAZ")
         }
 
-        println!("num: {}", num.green())
+        println!("i: {}", i.green())
     }
+}
+
+// Call above function
+fn loop_panic_1_call() {
+    loop_panic_1(vec![6, 9, 9, 0]);
 }
