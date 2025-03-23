@@ -79,7 +79,7 @@ fn sum_arg(n: &[i32]) -> i32 {
 }
 
 fn sum_arg_call() {
-    let num = [2, 5, 6, 7, 8];
+    let num = [20, 5, 6, 7, 8];
     let res = sum_arg(&num);
     println!("Numbz = {:?}", num.red());
     println!("Sum iz {}", res.green())
