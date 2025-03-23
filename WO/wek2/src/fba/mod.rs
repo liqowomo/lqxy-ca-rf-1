@@ -111,6 +111,12 @@ fn loop_panic_1_call() {
 // Error Handling with March
 // ******************
 
-fn er_ha_ma_1(){
-    let file = File::open("smellpanty.txt")
+// Trying to open a file which doesnt exist to handle error
+fn er_ha_ma_1() {
+    let file = File::open("smellpanty.txt");
+
+    let file  = match file {
+        Ok(file) => file;
+    }
+
 }
