@@ -117,7 +117,7 @@ fn loop_panic_1_call() {
 // Trying to open a file which doesnt exist to handle error
 fn er_ha_ma_1() {
     header("Read File and Panic");
-    let file = File::open("smllpanty.txt");
+    let file = File::open("smellpanty.txt");
 
     // Checking existence of the file
     let file = match file {
