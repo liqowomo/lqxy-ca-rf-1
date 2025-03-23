@@ -1,1 +1,2 @@
-eee
+File is located in the root of the project 
+- Path si important
