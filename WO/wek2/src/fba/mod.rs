@@ -12,7 +12,7 @@ use yansi::Paint;
 pub fn fba_main() {
     // clear_console();
     print_with_synthwave_gradient("Function Basics".to_string());
-    sum_arg_call()
+    loop_panic_1_call();
 }
 
 // ******************
@@ -90,12 +90,13 @@ fn sum_arg_call() {
 // ******************
 
 fn loop_panic_1(num: Vec<i32>) {
+    header("Loops and Panic");
     for i in num {
         if i < 0 {
-            panic!("FUCK NEGATIVE NUMBAZ")
+            panic!("FUCK NEGATIVE NUMBAZ");
         }
 
-        println!("i: {}", i.green())
+        println!("i: {}", i.green());
     }
 }
 
