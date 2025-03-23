@@ -102,5 +102,7 @@ fn loop_panic_1(num: Vec<i32>) {
 
 // Call above function
 fn loop_panic_1_call() {
+    let new_string = String::("hi Hi")
+    println!("{}", new_string(100))
     loop_panic_1(vec![6, 9, -9, 0]);
 }
