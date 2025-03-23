@@ -5,7 +5,10 @@
 #![allow(deprecated)]
 
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
-use std::{fs::File, io};
+use std::{
+    fs::File,
+    io::{self, BufReader},
+};
 use yansi::Paint;
 
 // Main function that will call other functions in the file
@@ -115,15 +118,18 @@ fn loop_panic_1_call() {
 fn er_ha_ma_1() {
     let file = File::open("smellpanty.txt");
 
-    let file  = match file {
-        Ok(file) => file;
-        Err(error) => {
-            match error.kind() {
-                std::io::ErrorKind::NotFound => {
-                    
-                }
+    let file = match file {
+        Ok(file) => file,
+        Err(error) => match error.kind() {
+            std::io::ErrorKind::NotFound => {
+                panic!("[x] NO FILE: {}", error)
             }
-        }
-    }
+            _ => {
+                panic!("Cant Open File: {}", error)
+            }
+        },
+    };
 
+    let reader = BufReader::new(file);
+    for line in reader.lines() {}
 }
