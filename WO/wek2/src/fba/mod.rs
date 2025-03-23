@@ -117,6 +117,13 @@ fn er_ha_ma_1() {
 
     let file  = match file {
         Ok(file) => file;
+        Err(error) => {
+            match error.kind() {
+                std::io::ErrorKind::NotFound => {
+                    
+                }
+            }
+        }
     }
 
 }
