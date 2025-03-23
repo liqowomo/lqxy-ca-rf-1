@@ -131,5 +131,7 @@ fn er_ha_ma_1() {
     };
 
     let reader = BufReader::new(file);
-    for line in reader.lines() {}
+    for line in reader.lines() {
+        println!("{}", line.unwrap().green())
+    }
 }
