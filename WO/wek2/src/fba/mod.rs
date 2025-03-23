@@ -148,5 +148,13 @@ fn er_ha_ma_2() {
                 print!("{}", line.unwrap().green())
             }
         }
+        Err(error) => match error.kind() {
+            std::io::ErrorKind::NotFound => {
+                panic!("NO FILE : {}", error)
+            }
+            _ => {
+                panic!("cant open bastard" {}, error)
+            }
+        },
     }
 }
