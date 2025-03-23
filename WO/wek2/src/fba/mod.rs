@@ -5,7 +5,7 @@
 #![allow(deprecated)]
 
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
-use std::io;
+use std::{fs::File, io};
 use yansi::Paint;
 
 // Main function that will call other functions in the file
@@ -105,4 +105,12 @@ fn loop_panic_1_call() {
     let new_string = String::from("hi Hi");
     // println!("{}", new_string[100]); // Going out of index
     loop_panic_1(vec![6, 9, -9, 0]);
+}
+
+// ******************
+// Error Handling with March
+// ******************
+
+fn er_ha_ma_1(){
+    let file = File::open("smellpanty.txt")
 }
