@@ -142,6 +142,11 @@ fn er_ha_ma_1() {
 fn er_ha_ma_2() {
     let file = File::open("smellpanty.txt");
     match file {
-        Ok()
+        Ok(file) => {
+            let reader = BufReader::new(file);
+            for line in reader.lines() {
+                print!("{}", line.unwrap().green())
+            }
+        }
     }
 }
