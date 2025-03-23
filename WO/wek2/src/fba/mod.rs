@@ -138,6 +138,11 @@ fn er_ha_ma_1() {
     }
 }
 
+//
+//
+//
+//
+
 // Above function refactor
 fn er_ha_ma_2() {
     header("Search for file , read or panic");
