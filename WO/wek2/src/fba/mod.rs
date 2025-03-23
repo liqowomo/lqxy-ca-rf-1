@@ -140,6 +140,7 @@ fn er_ha_ma_1() {
 
 // Above function refactor
 fn er_ha_ma_2() {
+    header("Search for file , read or panic");
     let file = File::open("smellpanty.txt");
     match file {
         Ok(file) => {
@@ -153,7 +154,7 @@ fn er_ha_ma_2() {
                 panic!("NO FILE : {}", error)
             }
             _ => {
-                panic!("cant open bastard" {}, error)
+                panic!("cant open bastard {}", error)
             }
         },
     }
