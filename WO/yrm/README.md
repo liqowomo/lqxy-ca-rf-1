@@ -31,3 +31,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -
 ```rs 
 cargo install cargo-show-asm
 ```
+
+# Note Section 
+
+> This will have important notes from the tutorial video 
+
+1. Arrays live directly in the stack in rust 
