@@ -22,11 +22,13 @@ pub fn w1_main() {
 // ********* Actual Function ***************
 
 fn testrun() {
+    let line = "+".repeat(20);
     println!(
         "
 {}
 {}
+{}
 ",
-        "Hey", "What"
+        line, "Hey", "What"
     );
 }
