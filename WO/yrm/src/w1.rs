@@ -16,11 +16,12 @@ pub fn w1_main() {
     println!("{}", "Memory Management In Rust".green());
 
     // Functions Section
-    testrun();
+    // testrun();
 }
 
-// ********* Actual Function ***************
+// ********* Test Functions ***************
 
+// Testing multine text printing
 fn testrun() {
     let line = "+".repeat(20);
     println!(
@@ -32,3 +33,5 @@ fn testrun() {
         line, "Hey", "What"
     );
 }
+
+// ********* Test Functions ***************
