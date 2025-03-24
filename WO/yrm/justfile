@@ -1,3 +1,3 @@
 asm:
     echo "Smell Panty"
-    cargo asm yrm::w1::play1 | tee -a just1.txt
+    cargo asm yrm::w1::play1
