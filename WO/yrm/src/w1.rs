@@ -18,7 +18,7 @@ pub fn w1_main() {
 
     // Functions Section
     // testrun();
-    play1();
+    play2();
 }
 
 // ********* Test Functions ***************
@@ -47,4 +47,6 @@ fn play1() {
     println!("{}", x);
 }
 
-fn play2() {}
+fn play2() {
+    println!("{}", "Chooth".red());
+}
