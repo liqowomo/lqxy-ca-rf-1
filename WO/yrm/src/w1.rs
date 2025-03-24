@@ -29,7 +29,7 @@ fn testrun() {
         "
 {}
 {}
-{}
+{}f
 ",
         line, "Hey", "What"
     );
