@@ -49,8 +49,5 @@ fn play1() {
 
 #[inline(never)]
 fn play2() {
-    println!("{}", "Chaat".red());
-    let mut x = 42;
-    x += 1;
-    println!("{}", x);
+    println!("{}", "Play 2 Function".green());
 }
