@@ -1,3 +1,3 @@
 asm:
     echo "Smell Panty"
-    cargo asm yrm::w1::play1
+    cargo asm yrm::w1::play1 --rust
