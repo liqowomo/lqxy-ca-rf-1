@@ -46,3 +46,5 @@ fn play1() {
     x += 1;
     println!("{}", x);
 }
+
+fn play2() {}
