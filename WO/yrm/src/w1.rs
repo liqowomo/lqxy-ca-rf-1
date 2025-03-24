@@ -41,7 +41,7 @@ fn testrun() {
 fn play1() {
     header("Playground");
 
-    // Variables by defalt are immutable
+    // Variables by defalt are immutaicble
 
     let mut x = 42;
     x += 1;
