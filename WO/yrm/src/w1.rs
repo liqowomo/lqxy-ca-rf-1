@@ -52,5 +52,6 @@ fn play2() {
     println!("{}", "Play 2 Function".green());
 
     let numbers = [0x68, 0x69, 0x0a, 0];
+    let numbers2 = vec![0x68, 0x69, 0x0a, 0];
     println!("{:?}", numbers);
 }
