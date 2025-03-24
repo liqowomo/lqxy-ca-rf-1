@@ -1,6 +1,7 @@
 // Work 1 from the tutorial
 #![allow(dead_code)]
 #![allow(unused_imports)]
+#![allow(unused_variables)]
 
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
 use yansi::Paint;
@@ -39,4 +40,8 @@ fn testrun() {
 #[inline(never)]
 fn play1() {
     header("Playground");
+
+    let mut x = 42;
+    x += 1;
+    println!("{}", x);
 }
