@@ -24,3 +24,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -
 ## Cargo ASM 
 
 1. This is for getting the assembly of the program 
+2. The tutorial was showin an older crate , we will use a newer crate 
+
+[`cargo-show-asm`](https://lib.rs/crates/cargo-show-asm) - Shows the generated assembly code 
+
+```rs 
+cargo install cargo-show-asm
+```
