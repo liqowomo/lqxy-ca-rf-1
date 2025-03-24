@@ -1,3 +1,3 @@
-asm :
+asm:
     echo "Smell Panty"
     cargo asm yrm::w1::play1
