@@ -17,6 +17,7 @@ pub fn w1_main() {
 
     // Functions Section
     // testrun();
+    play1();
 }
 
 // ********* Test Functions ***************
@@ -35,3 +36,7 @@ fn testrun() {
 }
 
 // ********* Test Functions ***************
+#[inline(never)]
+fn play1() {
+    header("Playground");
+}
