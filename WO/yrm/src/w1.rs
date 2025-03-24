@@ -49,4 +49,7 @@ fn play1() {
 
 fn play2() {
     println!("{}", "Chooth".red());
+    let mut x = 42;
+    x += 1;
+    println!("{}", x);
 }
