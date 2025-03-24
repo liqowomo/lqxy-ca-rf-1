@@ -3,6 +3,7 @@
 #![allow(unused_imports)]
 
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
+use yansi::Paint;
 
 // Main Function entry point
 
