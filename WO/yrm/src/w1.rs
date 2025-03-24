@@ -10,4 +10,5 @@ use yansi::Paint;
 pub fn w1_main() {
     let banner = "Work 1 ";
     print_with_synthwave_gradient(banner.to_string());
+    println!("{}", "Memory Management In Rust".green())
 }
