@@ -18,7 +18,7 @@ pub fn w1_main() {
 
     // Functions Section
     // testrun();
-    play1();
+    play2();
 }
 
 // ********* Test Functions ***************
