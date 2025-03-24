@@ -1,3 +1,3 @@
-asm :
+asm METHOD:
     echo "Smell Panty"
-    cargo asm yrm::w1::play2 --rust
+    cargo asm yrm::w1::{{METHOD}} --rust
