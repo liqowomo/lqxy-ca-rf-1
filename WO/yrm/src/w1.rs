@@ -4,6 +4,7 @@
 
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
 use yansi::Paint;
+use print
 
 // Main Function entry point
 
