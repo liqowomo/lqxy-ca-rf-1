@@ -16,6 +16,17 @@ pub fn w1_main() {
     println!("{}", "Memory Management In Rust".green())
 
     // Functions Section
+    testrun();
 }
 
 // ********* Actual Function ***************
+
+fn testrun() {
+    println!(
+        "
+{}
+{}
+    ",
+        "Hey", "What"
+    )
+}
