@@ -7,8 +7,15 @@ use yansi::Paint;
 
 // Main Function entry point
 
+// ********* Banner Funcion ***************
+
 pub fn w1_main() {
+    // Banner Section
     let banner = "Work 1 ";
     print_with_synthwave_gradient(banner.to_string());
     println!("{}", "Memory Management In Rust".green())
+
+    // Functions Section
 }
+
+// ********* Actual Function ***************
