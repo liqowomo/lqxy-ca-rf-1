@@ -21,3 +21,16 @@ pub fn w2_main() {
 }
 
 // --- Sub functions to be called in main ---
+
+#[derive(Debug)]
+pub struct MyPreciousRing {
+    pub engraving: String,
+}
+
+impl MyPreciousRing {
+    pub fn forge() -> Self {
+        Self {
+            engraving: "The One Ring".to_string(),
+        }
+    }
+}
