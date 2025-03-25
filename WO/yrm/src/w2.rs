@@ -18,6 +18,7 @@ pub fn w2_main() {
     println!("{}", "Rust Ownership Model".green());
 
     // Calling Sub Functions
+    ownership_ring();
 }
 
 // --- Sub functions to be called in main ---
@@ -37,6 +38,7 @@ impl MyPreciousRing {
 
 pub fn ownership_ring() {
     let saurons_ring = MyPreciousRing::forge();
+    println!("Sauron Ring Sez : {saurons_ring:#?}");
     println!("Sauron Ring Sez : {saurons_ring:#?}");
 
     let gollums_ring = saurons_ring;
