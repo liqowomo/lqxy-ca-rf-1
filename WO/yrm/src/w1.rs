@@ -86,5 +86,5 @@ fn play3() {
     point.y += 2;
     point.z += 3;
 
-    println!(&numbers);
+    print_bytes(&point);
 }
