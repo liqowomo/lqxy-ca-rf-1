@@ -79,5 +79,11 @@ struct PointCopy {
 
 #[inline(never)]
 fn play3() {
-    let mut point = Point3D { x: 0, y: 0, z: 0 };
+    let mut point = Point3D { x: 15, y: 14, z: 3 };
+
+    point.x += 1;
+    point.y += 2;
+    point.z += 3;
+
+    println!(&numbers);
 }
