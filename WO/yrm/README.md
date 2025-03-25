@@ -38,5 +38,7 @@ cargo install cargo-show-asm
 
 > This will have important notes from the tutorial video 
 
+
+
 1. Arrays live directly in the stack in rust 
 2. `vec![]` - Vector is array of dynamic size , doent live on the stack , but lives on the heap
