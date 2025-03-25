@@ -32,6 +32,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -
 ```rs 
 cargo install cargo-show-asm
 ```
+- Note this is more modern crate which addresses short comings of `cargo asm`
 
 # Note Section 
 

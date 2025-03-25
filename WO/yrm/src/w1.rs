@@ -47,6 +47,7 @@ fn play1() {
     println!("{}", x);
 }
 
+// same as above but comparing the data types on stack and heap
 #[inline(never)]
 fn play2() {
     println!("{}", "Play 2 Function".green());
