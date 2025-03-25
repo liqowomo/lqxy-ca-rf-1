@@ -58,3 +58,18 @@ fn play2() {
     println!("i32 = {:?}", numbers1);
     println!("ve = {:?}", numbers2);
 }
+
+// Three Stucture
+
+struct Print {
+    x: i32,
+    y: i32,
+}
+
+struct Print3d {
+    x: i32,
+    y: i32,
+    z: i32,
+}
+
+#[derive(Copy, Clone)]
