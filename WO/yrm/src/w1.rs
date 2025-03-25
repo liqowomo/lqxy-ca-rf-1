@@ -76,3 +76,8 @@ struct PointCopy {
     x: i32,
     y: i32,
 }
+
+#[inline(never)]
+fn play3() {
+    let mut point = Point3D { x: 0, y: 0, z: 0 };
+}
