@@ -3,6 +3,7 @@
 #![allow(unused_imports)]
 #![allow(unused_variables)]
 
+use crate::print::print_bytes;
 use crate::utils::{clear_console, header, print_with_synthwave_gradient};
 use yansi::Paint;
 
