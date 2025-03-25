@@ -1,4 +1,5 @@
 // These file is taken directly from the youtube github repo
+#![allow(dead_code)]
 
 use std::mem;
 
