@@ -59,17 +59,20 @@ fn play2() {
     println!("ve = {:?}", numbers2);
 }
 
-// Three Stucture
-
-struct Print {
+// Three Stucture - For learning from tutorial
+struct Point {
     x: i32,
     y: i32,
 }
 
-struct Print3d {
+struct Point3D {
     x: i32,
     y: i32,
     z: i32,
 }
 
 #[derive(Copy, Clone)]
+struct PointCopy {
+    x: i32,
+    y: i32,
+}
