@@ -18,7 +18,7 @@ pub fn w1_main() {
 
     // Functions Section
     // testrun();
-    play2();
+    play1();
 }
 
 // ********* Test Functions ***************
@@ -39,7 +39,7 @@ fn testrun() {
 // ********* Test Functions ***************
 #[inline(never)]
 fn play1() {
-    header("Playground");
+    // header("Playground");
 
     // Variables by defalt are immutable
     let mut x = 42;
