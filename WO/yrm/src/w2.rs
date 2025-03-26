@@ -38,6 +38,7 @@ impl MyPreciousRing {
 
 // This is declared as a module inside this file
 mod we_are_all_friends_here {
+    #[derive(Debug, Clone, Copy)]
     pub struct MyPreciousRing {
         engraving: &'static str,
     }
