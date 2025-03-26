@@ -2,10 +2,10 @@
 
 mod print;
 mod utils;
-mod w1;
+mod w2;
 
-use w1::w1_main;
+use w2::w2_main;
 
 fn main() {
-    w1_main();
+    w2_main();
 }
