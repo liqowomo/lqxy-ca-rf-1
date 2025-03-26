@@ -36,6 +36,7 @@ impl MyPreciousRing {
     }
 }
 
+#[inline(never)] // This instruction forces the function to be seperately compiled
 fn ownership_ring() {
     let saurons_ring = MyPreciousRing::forge();
     println!("Sauron Ring Sez : {saurons_ring:#?}");

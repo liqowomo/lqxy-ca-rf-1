@@ -94,4 +94,4 @@ cargo install cargo-show-asm
 ## When Assembly Instruction is not visible 
 
 1. The compiler does some optimization, so the actual assembly code may not be visible in the assembly output.
-2. you need to use - #
+2. you need to use - `#[inline(never)]` this will force it to be a seperate function
