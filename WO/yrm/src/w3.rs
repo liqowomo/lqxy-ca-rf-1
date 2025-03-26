@@ -31,7 +31,9 @@ impl MyPreciousRing {
     }
 }
 
-mod we_are_ki
+mod we_are_all_frens_here() {
+    
+}
 
 
 #[inline(never)] // This instruction forces the function to be seperately compiled
