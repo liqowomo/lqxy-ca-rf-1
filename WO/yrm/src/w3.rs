@@ -31,7 +31,7 @@ impl MyPreciousRing {
     }
 }
 
-mod we_are_
+mod we_are_ki
 
 
 #[inline(never)] // This instruction forces the function to be seperately compiled
