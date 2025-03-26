@@ -62,6 +62,8 @@ fn ownership_ring() {
     // let mut frodos_ring_mut = &mut frodo_ring;
     // let mut samwise_ring_mut = &mut frodo_ring;
     // heat(&mut frodos_ring_mut);
+
+    destroy(frodos_ring);
 }
 
 // Helper function
@@ -87,5 +89,24 @@ fn destroy(ring: MyPreciousRing) {
         ..,;cllddod;::::,;;'  
             ..',,:cclll:;. 
     "
+    );
+
+    println!(
+        "{}",
+        r"
+   .oxkkkxdxxoc,             
+  ,cOdcoddoddkdlodoc'         
+.c:,K:;,,;;:coxkOxocodo.      
+,c;.xk      ..';:lkOOxckk;    
+,oo;,xk.        ..,:lkkdlkk'  
+.,ooc;o0o          .':llklcOl 
+ ':dkl;;xOl.         .,;lxlcOl
+  ';coxl;;:do:.        .,dxcoO
+   .',;oxkl;;;lol:'     ,ld:xk
+      .,;coddo:ccclxdxxodxxxo 
+        ..,;cllddod;::::,;;'  
+            ..',,:cclll:;. 
+    "
+        .green()
     )
 }
