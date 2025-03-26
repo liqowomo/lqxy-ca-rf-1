@@ -32,9 +32,8 @@ impl MyPreciousRing {
 }
 
 mod we_are_all_frens_here() {
-    
+    #[derive(Debug, Copy, Clone)]
 }
-
 
 #[inline(never)] // This instruction forces the function to be seperately compiled
 fn happy_lor() {}
