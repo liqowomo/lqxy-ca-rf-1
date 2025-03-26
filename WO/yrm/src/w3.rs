@@ -36,7 +36,7 @@ impl MyPreciousRing {
 }
 
 mod we_are_all_frens_here {
-    #[derive(Debug, Clone)]
+    #[derive(Debug, Copy, Clone)]
     pub struct MyPreciousRing {
         engraving: &'static str,
     }
@@ -56,7 +56,12 @@ fn happy_lor() {
     println!("Saurons Ring Says: {saurons_ring:?}");
 
     // Copy data bitwise since
-    let gollums_ring = saurons_ring.clone();
-    println!("Gollums Ring Says: {saurons_ring:?}");
+    let gollums_ring = saurons_ring;
     println!("My Precious Ring Says: {gollums_ring:?}");
+
+    let bilbos_ring = gollums_ring;
+    println!("Bilbos Ring Says: {bilbos_ring:?}");
+
+    let frodo_ring = bilbos_ring;
+    println!("Frodo's Ring Says: {frodo_ring:?}");
 }
