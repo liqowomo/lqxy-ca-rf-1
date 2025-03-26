@@ -69,3 +69,23 @@ fn ownership_ring() {
 pub fn heat(ring: &mut MyPreciousRing) {
     ring.engraving = "HeatingRing".to_string();
 }
+
+// Destroy ring
+fn destroy(ring: MyPreciousRing) {
+    println!(
+        r"
+   .oxkkkxdxxoc,             
+  ,cOdcoddoddkdlodoc'         
+.c:,K:;,,;;:coxkOxocodo.      
+,c;.xk      ..';:lkOOxckk;    
+,oo;,xk.        ..,:lkkdlkk'  
+.,ooc;o0o          .':llklcOl 
+ ':dkl;;xOl.         .,;lxlcOl
+  ';coxl;;:do:.        .,dxcoO
+   .',;oxkl;;;lol:'     ,ld:xk
+      .,;coddo:ccclxdxxodxxxo 
+        ..,;cllddod;::::,;;'  
+            ..',,:cclll:;. 
+    "
+    )
+}
