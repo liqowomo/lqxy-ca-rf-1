@@ -54,6 +54,7 @@ fn ownership_ring() {
     println!("Samwise's Ring Sez : {samwise_ring:#?}");
 
     // Shadowing here - Br
+    println!("Frodo's Ring Sez : {frodo_ring:#?}");
     let mut frodos_ring = frodo_ring;
     heat(&mut frodos_ring);
     println!("Frodo's Ring Sez : {frodos_ring:#?}");
@@ -63,7 +64,6 @@ fn ownership_ring() {
     // heat(&mut frodos_ring_mut);
 
     destroy(frodos_ring);
-    println!("Frodo's Ring Sez : {frodo_ring:#?}");
 }
 
 // Helper function
