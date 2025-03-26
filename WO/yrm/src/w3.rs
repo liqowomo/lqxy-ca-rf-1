@@ -12,7 +12,7 @@ pub fn w3_main() {
     // Banner Section
     let banner = "Ownership Model ";
     print_with_synthwave_gradient(banner.to_string());
-    header("3rd Version of the file");
+    header("w3.rs - 3rd Version of the file");
 
     // Calling Sub Functions
 }
@@ -47,4 +47,6 @@ mod we_are_all_frens_here {
 }
 
 #[inline(never)] // This instruction forces the function to be seperately compiled
-fn happy_lor() {}
+fn happy_lor() {
+    let saurons_ring = we_are_all_frens_here::MyPreciousRing::forge();
+}
