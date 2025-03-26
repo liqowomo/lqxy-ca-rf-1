@@ -93,23 +93,24 @@ cargo install cargo-show-asm
 
 ```mermaid
 graph TD;
-    A[Memory Allocation] -->|Fixed-size, local vars| B[Stack]
+    A[Memory Allocation] -->|Fixed-size, local variables| B[Stack]
     A -->|Dynamic memory allocation| C[Heap]
 
-    B -->|Direct access (rsp + offset)| B1[Fast access]
-    B -->|Manual allocation (sub rsp, X)| B2[Predefined size]
-    B -->|Auto deallocation (add rsp, X)| B3[Cleanup on return]
-    B -->|Short lifetime| B4[Until function exits]
-    B -->|Faster (LIFO, cache-friendly)| B5[Efficient]
+    B -->|Direct memory access| B1[Fast Access]
+    B -->|Manual allocation (sub rsp, X)| B2[Predefined Size]
+    B -->|Auto deallocation| B3[Cleanup on Function Return]
+    B -->|Short Lifetime| B4[Until Function Exits]
+    B -->|Faster (LIFO, Cache-Friendly)| B5[Efficient]
 
-    C -->|Indirect access (pointer dereference)| C1[Slower access]
-    C -->|Dynamic allocation (call __rust_alloc)| C2[Flexible size]
-    C -->|Manual deallocation (call __rust_dealloc)| C3[Must be freed manually]
-    C -->|Long lifetime| C4[Until explicitly freed]
-    C -->|Slower (fragmentation, pointer indirection)| C5[Less efficient]
+    C -->|Indirect access via pointer| C1[Slower Access]
+    C -->|Dynamic allocation (call rust_alloc)| C2[Flexible Size]
+    C -->|Manual deallocation (call rust_dealloc)| C3[Must Be Freed Manually]
+    C -->|Long Lifetime| C4[Until Explicitly Freed]
+    C -->|Slower (Fragmentation, Pointer Indirection)| C5[Less Efficient]
 
-    B -->|Used for local vars, function calls| B6[Common Uses]
-    C -->|Used for Vec<T>, Box<T>, Rc<T>, Arc<T>| C6[Common Uses]
+    B -->|Used for Local Vars, Function Calls| B6[Common Uses]
+    C -->|Used for Vec, Box, Rc, Arc| C6[Common Uses]
+
 ```
 
 ## When Assembly Instruction is not visible 
