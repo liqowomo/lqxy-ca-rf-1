@@ -31,8 +31,19 @@ impl MyPreciousRing {
     }
 }
 
-mod we_are_all_frens_here() {
+mod we_are_all_frens_here(){
     #[derive(Debug, Copy, Clone)]
+    pub struct MyPreciousRing {
+        engraving: String,
+    }
+
+    impl MyPreciousRing {
+        pub fn forge() -> Self {
+            Self {
+                engraving: "The One Ring".to_string(),
+            }
+        }
+    }
 }
 
 #[inline(never)] // This instruction forces the function to be seperately compiled
