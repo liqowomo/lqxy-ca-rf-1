@@ -18,10 +18,10 @@ asm2:
     cargo asm yrm::w2 --rust
 
 # Calling w1 functions
-asm1:
+asm1 METHOD:
     echo "++++++++++++++++++++++++++++++++++"
     echo "++++++++++++++++++++++++++++++++++"
     echo "++++++++++++++++++++++++++++++++++"
     echo "++++++++++++++++++++++++++++++++++"
     echo "Smell Panty >>>>>>>>>>>>>>>>>>>>>>>"
-    cargo asm yrm::w1::play5 --rust
+    cargo asm yrm::w1::{{METHOD}} --rust
