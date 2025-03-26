@@ -31,16 +31,16 @@ impl MyPreciousRing {
     }
 }
 
-mod we_are_all_frens_here(){
+mod we_are_all_frens_here {
     #[derive(Debug, Copy, Clone)]
     pub struct MyPreciousRing {
-        engraving: String,
+        engraving: &'static str,
     }
 
     impl MyPreciousRing {
         pub fn forge() -> Self {
             Self {
-                engraving: "The One Ring".to_string(),
+                engraving: "The One Ring",
             }
         }
     }
