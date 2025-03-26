@@ -31,5 +31,8 @@ impl MyPreciousRing {
     }
 }
 
+mod we_are_
+
+
 #[inline(never)] // This instruction forces the function to be seperately compiled
 fn happy_lor() {}
