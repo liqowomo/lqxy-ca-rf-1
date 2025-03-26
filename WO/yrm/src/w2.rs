@@ -91,9 +91,7 @@ fn destroy(ring: MyPreciousRing) {
     "
     );
 
-    println!(
-        "{}",
-        r"
+let RingDrawing = r"
    .oxkkkxdxxoc,             
   ,cOdcoddoddkdlodoc'         
 .c:,K:;,,;;:coxkOxocodo.      
@@ -107,6 +105,12 @@ fn destroy(ring: MyPreciousRing) {
         ..,;cllddod;::::,;;'  
             ..',,:cclll:;. 
     "
+
+    println!(
+        "{}",
+        
         .green()
-    )
+    );
+
+    println!("{}", "ringduck".red());
 }
