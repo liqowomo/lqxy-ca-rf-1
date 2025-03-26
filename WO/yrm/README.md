@@ -8,6 +8,7 @@
    2. [Summary Differences of Stack and Heap (Rust)](#summary-differences-of-stack-and-heap-rust)
    3. [📌 Stack vs Heap in Assembly (Rust)](#-stack-vs-heap-in-assembly-rust)
    4. [📌 Stack vs Heap Pointers in Assembly (Rust)](#-stack-vs-heap-pointers-in-assembly-rust)
+   5. [When Assembly Instruction is not visible](#when-assembly-instruction-is-not-visible)
 
 # yrm
 
@@ -89,3 +90,8 @@ cargo install cargo-show-asm
 | **`String`** | **Heap** ✅ | `call __rust_alloc` (allocates memory) + `mov rax, [ptr]` (accessing string) |
 | **`&str` (String Slice)** | **Stack** ✅ (if `&"hello"`) / **Heap** ✅ (if from `String`) | `lea rax, [rip + .L__unnamed]` (stack) OR `mov rax, [ptr]` (heap) |
 | **`*const T` / `*mut T` (Raw Pointer)** | **Stack** (points to stack) or **Heap** (points to heap) | `mov rax, [rsp + offset]` (stack) OR `mov rax, [ptr]` (heap) |
+
+## When Assembly Instruction is not visible 
+
+1. The compiler does some optimization, so the actual assembly code may not be visible in the assembly output.
+2. you need to use - #
