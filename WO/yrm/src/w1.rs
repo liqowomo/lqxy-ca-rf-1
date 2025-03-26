@@ -102,10 +102,12 @@ fn play4() {
 
 #[inline(never)]
 fn play5() {
-    let mut point = Box::new(Point { x: 15, y: 14 });
+    let mut point = Point { x: 15, y: 14 });
 
     point.x += 1;
     point.y += 2;
+
+    let point2 = point;
 
     print_bytes(&point);
 }
