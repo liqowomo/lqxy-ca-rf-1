@@ -123,5 +123,7 @@ fn play6() {
     point2.x += 1;
     point2.y += 1;
 
+    println!("Printing {}", "poin2".magenta());
+    print_bytes(&point);
     print_bytes(&point2);
 }
