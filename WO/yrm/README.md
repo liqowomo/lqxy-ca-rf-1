@@ -3,6 +3,10 @@
    1. [JustFile](#justfile)
    2. [Cargo ASM](#cargo-asm)
 3. [Note Section](#note-section)
+4. [Understanding the Assembly Patterns](#understanding-the-assembly-patterns)
+   1. [Summary Differences of Stack and Heap (Rust)](#summary-differences-of-stack-and-heap-rust)
+   2. [📌 Stack vs Heap in Assembly (Rust)](#-stack-vs-heap-in-assembly-rust)
+   3. [📌 Stack vs Heap Pointers in Assembly (Rust)](#-stack-vs-heap-pointers-in-assembly-rust)
 
 # yrm
 
@@ -41,4 +45,41 @@ cargo install cargo-show-asm
 1. Stack (Fixed size, fast) is LIFO , Heap(Dynamic, slow) is FILO
 2. Arrays live directly in the stack in rust 
 3. `vec![]` - Vector is array of dynamic size , doent live on the stack , but lives on the heap
-4. 
+
+
+# Understanding the Assembly Patterns 
+
+
+## Summary Differences of Stack and Heap (Rust)
+
+## 📌 Stack vs Heap in Assembly (Rust)
+
+| Feature        | Stack 🟢 | Heap 🔴 |
+|---------------|---------|--------|
+| **Storage Type** | Fixed-size, local variables | Dynamic memory allocation |
+| **Memory Access** | `[rsp + offset]` (direct access) | `mov rax, [ptr]` (pointer dereference) |
+| **Allocation** | `sub rsp, X` (manual) | `call __rust_alloc` (dynamic) |
+| **Deallocation** | `add rsp, X` (automatic on function return) | `call __rust_dealloc` (manual via `drop`) |
+| **Ownership** | Function scope (auto cleanup) | Must be explicitly freed (`Box`, `Rc`, etc.) |
+| **Lifetime** | Short (until function exits) | Long (until manually freed) |
+| **Speed** | Faster (LIFO, cache-friendly) | Slower (fragmentation, extra pointer indirection) |
+| **Common Uses** | Local variables, function calls | `Vec<T>`, `Box<T>`, `Rc<T>`, `Arc<T>` |
+| **Example Allocation** | `sub rsp, 32` (reserve 32 bytes) | `call __rust_alloc` (allocate heap memory) |
+| **Example Access** | `mov rax, [rsp + 16]` (stack var) | `mov rax, [rax]` (dereferencing heap ptr) |
+
+
+
+
+## 📌 Stack vs Heap Pointers in Assembly (Rust)
+
+| Rust Pointer Type  | Stack or Heap? | Assembly Pattern |
+|--------------------|---------------|------------------|
+| **`&T` (Reference)** | **Stack** ✅ | `lea rdi, [rsp + offset]` (passing address of stack var) |
+| **`&mut T` (Mutable Reference)** | **Stack** ✅ | `mov rax, [rsp + offset]` (reading/modifying stack var) |
+| **`Box<T>`** | **Heap** ✅ | `call __rust_alloc` (allocates memory) → `mov [rsp + offset], rax` (stores heap pointer on stack) |
+| **`Rc<T>`** | **Heap** ✅ | `call __rust_alloc` + `lock inc qword ptr [rax]` (reference counting) |
+| **`Arc<T>`** | **Heap** ✅ | `call __rust_alloc` + `lock inc qword ptr [rax]` (atomic reference counting) |
+| **`Vec<T>`** | **Heap** ✅ | `call __rust_alloc` (allocates memory) + `mov [rsp + offset], rax` (stores heap pointer) |
+| **`String`** | **Heap** ✅ | `call __rust_alloc` (allocates memory) + `mov rax, [ptr]` (accessing string) |
+| **`&str` (String Slice)** | **Stack** ✅ (if `&"hello"`) / **Heap** ✅ (if from `String`) | `lea rax, [rip + .L__unnamed]` (stack) OR `mov rax, [ptr]` (heap) |
+| **`*const T` / `*mut T` (Raw Pointer)** | **Stack** (points to stack) or **Heap** (points to heap) | `mov rax, [rsp + offset]` (stack) OR `mov rax, [ptr]` (heap) |
