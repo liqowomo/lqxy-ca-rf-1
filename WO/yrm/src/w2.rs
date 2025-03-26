@@ -89,5 +89,11 @@ fn destroy(ring: MyPreciousRing) {
             ..',,:cclll:;. 
     ";
 
+    let colored_art = ring_drawing
+        .lines()
+        .map(|line| line.green())
+        .collect::<Vec<_>>()
+        .join("\n");
+
     println!("{}", ring_drawing.green());
 }
