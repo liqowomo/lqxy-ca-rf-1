@@ -56,6 +56,7 @@ fn happy_lor() {
     println!("Saurons Ring Says: {saurons_ring:?}");
 
     // Copy data bitwise since
-    let gollums_ring = saurons_ring;
+    let gollums_ring = saurons_ring.clone();
+    println!("Gollums Ring Says: {saurons_ring:?}");
     println!("My Precious Ring Says: {gollums_ring:?}");
 }
