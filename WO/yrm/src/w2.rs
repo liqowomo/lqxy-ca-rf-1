@@ -74,6 +74,8 @@ pub fn heat(ring: &mut MyPreciousRing) {
 
 // Destroy ring
 fn destroy(ring: MyPreciousRing) {
+    Paint::enable_ansi_colors();
+
     let ring_drawing = r"
    .oxkkkxdxxoc,             
   ,cOdcoddoddkdlodoc'         
