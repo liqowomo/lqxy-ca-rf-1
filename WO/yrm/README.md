@@ -4,9 +4,10 @@
    2. [Cargo ASM](#cargo-asm)
 3. [Note Section](#note-section)
 4. [Understanding the Assembly Patterns](#understanding-the-assembly-patterns)
-   1. [Summary Differences of Stack and Heap (Rust)](#summary-differences-of-stack-and-heap-rust)
-   2. [📌 Stack vs Heap in Assembly (Rust)](#-stack-vs-heap-in-assembly-rust)
-   3. [📌 Stack vs Heap Pointers in Assembly (Rust)](#-stack-vs-heap-pointers-in-assembly-rust)
+   1. [Link](#link)
+   2. [Summary Differences of Stack and Heap (Rust)](#summary-differences-of-stack-and-heap-rust)
+   3. [📌 Stack vs Heap in Assembly (Rust)](#-stack-vs-heap-in-assembly-rust)
+   4. [📌 Stack vs Heap Pointers in Assembly (Rust)](#-stack-vs-heap-pointers-in-assembly-rust)
 
 # yrm
 
@@ -48,6 +49,10 @@ cargo install cargo-show-asm
 
 
 # Understanding the Assembly Patterns 
+
+## Link 
+
+1. [x86 Assembly Instructions](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html) - List of instructions , note 
 
 
 ## Summary Differences of Stack and Heap (Rust)
