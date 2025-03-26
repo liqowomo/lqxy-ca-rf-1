@@ -53,6 +53,8 @@ mod we_are_all_frens_here {
 #[inline(never)] // This instruction forces the function to be seperately compiled
 fn happy_lor() {
     let saurons_ring = we_are_all_frens_here::MyPreciousRing::forge();
-
     println!("Saurons Ring Says: {saurons_ring:?}");
+
+    let gollums_ring = saurons_ring;
+    println!("My Precious Ring Says: {gollums_ring:?}");
 }
