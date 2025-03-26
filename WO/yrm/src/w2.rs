@@ -36,22 +36,6 @@ impl MyPreciousRing {
     }
 }
 
-// This is declared as a module inside this file
-mod we_are_all_friends_here {
-    #[derive(Debug, Clone, Copy)]
-    pub struct MyPreciousRing {
-        engraving: &'static str,
-    }
-
-    impl MyPreciousRing {
-        pub fn forge() -> Self {
-            Self {
-                engraving: "The One Ring Panty",
-            }
-        }
-    }
-}
-
 #[inline(never)] // This instruction forces the function to be seperately compiled
 fn ownership_ring() {
     let saurons_ring = MyPreciousRing::forge();
