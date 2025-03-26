@@ -100,6 +100,7 @@ fn play4() {
     print_bytes(&point);
 }
 
+// Trying to allocate the memory on the stack
 #[inline(never)]
 fn play5() {
     let mut point = Point { x: 15, y: 14 };
