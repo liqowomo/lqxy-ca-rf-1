@@ -91,6 +91,27 @@ cargo install cargo-show-asm
 | **`&str` (String Slice)** | **Stack** ✅ (if `&"hello"`) / **Heap** ✅ (if from `String`) | `lea rax, [rip + .L__unnamed]` (stack) OR `mov rax, [ptr]` (heap) |
 | **`*const T` / `*mut T` (Raw Pointer)** | **Stack** (points to stack) or **Heap** (points to heap) | `mov rax, [rsp + offset]` (stack) OR `mov rax, [ptr]` (heap) |
 
+```mermaid
+graph TD;
+    A[Memory Allocation] -->|Fixed-size, local vars| B[Stack]
+    A -->|Dynamic memory allocation| C[Heap]
+
+    B -->|Direct access (rsp + offset)| B1[Fast access]
+    B -->|Manual allocation (sub rsp, X)| B2[Predefined size]
+    B -->|Auto deallocation (add rsp, X)| B3[Cleanup on return]
+    B -->|Short lifetime| B4[Until function exits]
+    B -->|Faster (LIFO, cache-friendly)| B5[Efficient]
+
+    C -->|Indirect access (pointer dereference)| C1[Slower access]
+    C -->|Dynamic allocation (call __rust_alloc)| C2[Flexible size]
+    C -->|Manual deallocation (call __rust_dealloc)| C3[Must be freed manually]
+    C -->|Long lifetime| C4[Until explicitly freed]
+    C -->|Slower (fragmentation, pointer indirection)| C5[Less efficient]
+
+    B -->|Used for local vars, function calls| B6[Common Uses]
+    C -->|Used for Vec<T>, Box<T>, Rc<T>, Arc<T>| C6[Common Uses]
+```
+
 ## When Assembly Instruction is not visible 
 
 1. The compiler does some optimization, so the actual assembly code may not be visible in the assembly output.
