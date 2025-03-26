@@ -6,4 +6,4 @@ asm METHOD:
     echo "++++++++++++++++++++++++++++++++++"
     echo "++++++++++++++++++++++++++++++++++"
     echo "Smell Panty >>>>>>>>>>>>>>>>>>>>>>>"
-    cargo asm yrm::w1::{{METHOD}} --rust
+    cargo asm yrm::w2::{{METHOD}} --rust

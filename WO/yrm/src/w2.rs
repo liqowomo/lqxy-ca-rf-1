@@ -36,7 +36,7 @@ impl MyPreciousRing {
     }
 }
 
-pub fn ownership_ring() {
+fn ownership_ring() {
     let saurons_ring = MyPreciousRing::forge();
     println!("Sauron Ring Sez : {saurons_ring:#?}");
     println!("Sauron Ring Sez : {saurons_ring:#?}");
