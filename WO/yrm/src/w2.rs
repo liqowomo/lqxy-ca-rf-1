@@ -74,8 +74,7 @@ pub fn heat(ring: &mut MyPreciousRing) {
 
 // Destroy ring
 fn destroy(ring: MyPreciousRing) {
-    println!(
-        r"
+    let ring_drawing = r"
    .oxkkkxdxxoc,             
   ,cOdcoddoddkdlodoc'         
 .c:,K:;,,;;:coxkOxocodo.      
@@ -88,29 +87,9 @@ fn destroy(ring: MyPreciousRing) {
       .,;coddo:ccclxdxxodxxxo 
         ..,;cllddod;::::,;;'  
             ..',,:cclll:;. 
-    "
-    );
+    ";
 
-let RingDrawing = r"
-   .oxkkkxdxxoc,             
-  ,cOdcoddoddkdlodoc'         
-.c:,K:;,,;;:coxkOxocodo.      
-,c;.xk      ..';:lkOOxckk;    
-,oo;,xk.        ..,:lkkdlkk'  
-.,ooc;o0o          .':llklcOl 
- ':dkl;;xOl.         .,;lxlcOl
-  ';coxl;;:do:.        .,dxcoO
-   .',;oxkl;;;lol:'     ,ld:xk
-      .,;coddo:ccclxdxxodxxxo 
-        ..,;cllddod;::::,;;'  
-            ..',,:cclll:;. 
-    "
-
-    println!(
-        "{}",
-        
-        .green()
-    );
+    println!("{}", ring_drawing.green());
 
     println!("{}", "ringduck".red());
 }
