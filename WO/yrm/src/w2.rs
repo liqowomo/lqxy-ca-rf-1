@@ -60,6 +60,7 @@ fn ownership_ring() {
     println!("Frodo's Ring Sez : {frodos_ring:#?}");
 
     let mut frodos_ring_mut = &mut frodo_ring;
+    let mut samwise_ring_mut = &mut frodo_ring;
 }
 
 // Helper function
