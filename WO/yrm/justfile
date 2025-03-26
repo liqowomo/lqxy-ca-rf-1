@@ -7,3 +7,12 @@ asm METHOD:
     echo "++++++++++++++++++++++++++++++++++"
     echo "Smell Panty >>>>>>>>>>>>>>>>>>>>>>>"
     cargo asm yrm::w2::{{METHOD}} --rust
+
+# Calling asm methods directory 
+asm2:
+    echo "++++++++++++++++++++++++++++++++++"
+    echo "++++++++++++++++++++++++++++++++++"
+    echo "++++++++++++++++++++++++++++++++++"
+    echo "++++++++++++++++++++++++++++++++++"
+    echo "Smell Panty >>>>>>>>>>>>>>>>>>>>>>>"
+    cargo asm yrm::w2 --rust
