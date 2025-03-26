@@ -12,7 +12,7 @@ pub fn w3_main() {
     // Banner Section
     let banner = "Ownership Model ";
     print_with_synthwave_gradient(banner.to_string());
-    println!("\n{}\n\n", "w3 - 3rd Version of file".green());
+    header("3rd Version of the file");
 
     // Calling Sub Functions
 }
