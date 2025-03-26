@@ -64,6 +64,8 @@ fn ownership_ring() {
     // heat(&mut frodos_ring_mut);
 
     destroy(frodos_ring);
+
+    // drop(frodos_ring); - This just takes ownership
 }
 
 // Helper function
