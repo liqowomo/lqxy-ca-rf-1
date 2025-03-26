@@ -115,12 +115,13 @@ fn play5() {
 
 #[inline(never)]
 fn play6() {
-    let mut point = Point { x: 15, y: 14 };
-
+    let mut point = PointCopy { x: 15, y: 14 };
     point.x += 1;
-    point.y += 2;
+    point.y += 1;
 
-    let point2 = point;
+    let mut point2 = point;
+    point2.x += 1;
+    point2.y += 1;
 
     print_bytes(&point2);
 }
