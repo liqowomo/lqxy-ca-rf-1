@@ -40,8 +40,27 @@ impl MyPreciousRing {
 fn ownership_ring() {
     let saurons_ring = MyPreciousRing::forge();
     println!("Sauron Ring Sez : {saurons_ring:#?}");
-    println!("Sauron Ring Sez : {saurons_ring:#?}");
 
     let gollums_ring = saurons_ring;
     println!("My Precious : {gollums_ring:#?}");
+
+    let bilbos_ring = gollums_ring;
+    // println!("Bilbo's Ring Sez : {bilbos_ring:#?}");
+
+    let frodo_ring = bilbos_ring;
+    println!("Frodo's Ring Sez : {frodo_ring:#?}");
+
+    let samwise_ring = &frodo_ring;
+    println!("Samwise's Ring Sez : {samwise_ring:#?}");
+    println!("Frodo's Ring Sez : {frodo_ring:#?}");
+
+    let mut frodos_ring = frodo_ring;
+    heat(&mut frodos_ring);
+    println!("Frodo's Ring Sez : {frodos_ring:#?}");
+}
+
+// Helper function
+// Deo of a mutable borrow = &mut
+pub fn heat(ring: &mut MyPreciousRing) {
+    ring.engraving = "HeatingRing".to_string();
 }
