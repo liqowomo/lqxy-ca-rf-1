@@ -12,10 +12,9 @@ pub fn w3_main() {
     // Banner Section
     let banner = "Ownership Model ";
     print_with_synthwave_gradient(banner.to_string());
-    println!("{}", "Rust Ownership Model".green());
+    println!("\n{}\n\n", "w3 - 3rd Version of file".green());
 
     // Calling Sub Functions
-    ownership_ring();
 }
 
 // Sub Functions
@@ -33,39 +32,4 @@ impl MyPreciousRing {
 }
 
 #[inline(never)] // This instruction forces the function to be seperately compiled
-fn ownership_ring() {
-    let saurons_ring = MyPreciousRing::forge();
-    println!("Sauron Ring Sez : {saurons_ring:#?}");
-
-    let gollums_ring = saurons_ring;
-    println!("My Precious : {gollums_ring:#?}");
-
-    let bilbos_ring = gollums_ring;
-    // println!("Bilbo's Ring Sez : {bilbos_ring:#?}");
-
-    let frodo_ring = bilbos_ring;
-    println!("Frodo's Ring Sez : {frodo_ring:#?}");
-
-    let samwise_ring = &frodo_ring;
-    println!("Samwise's Ring Sez : {samwise_ring:#?}");
-
-    // Shadowing here - Br
-    println!("Frodo's Ring Sez : {frodo_ring:#?}");
-    let mut frodos_ring = frodo_ring;
-    heat(&mut frodos_ring);
-    println!("Frodo's Ring Sez : {frodos_ring:#?}");
-
-    // let mut frodos_ring_mut = &mut frodo_ring;
-    // let mut samwise_ring_mut = &mut frodo_ring;
-    // heat(&mut frodos_ring_mut);
-
-    destroy(frodos_ring);
-
-    // drop(frodos_ring); - This just takes ownership
-}
-
-// Helper function
-// Deo of a mutable borrow = &mut
-pub fn heat(ring: &mut MyPreciousRing) {
-    ring.engraving = "HeatingRing".to_string();
-}
+fn happy_lor() {}
