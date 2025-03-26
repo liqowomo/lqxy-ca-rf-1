@@ -19,7 +19,7 @@ pub fn w1_main() {
 
     // Functions Section
     // testrun();
-    play4();
+    play5();
 }
 
 // ********* Test Functions ***************
@@ -92,6 +92,16 @@ fn play3() {
 // Lets make it live on the stack
 #[inline(never)]
 fn play4() {
+    let mut point = Box::new(Point { x: 15, y: 14 });
+
+    point.x += 1;
+    point.y += 2;
+
+    print_bytes(&point);
+}
+
+#[inline(never)]
+fn play5() {
     let mut point = Box::new(Point { x: 15, y: 14 });
 
     point.x += 1;
